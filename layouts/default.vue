@@ -1,7 +1,7 @@
 <template>
   <div>
     <NavBar />
-    <router-view></router-view>
+    <nuxt />
   </div>
 </template>
 
@@ -19,7 +19,29 @@ html {
   box-sizing: border-box;
   background: $background-color;
 }
-
+h1 {
+  font-family: Montserrat;
+  font-weight: bold;
+  color: white;
+  font-size: 52px;
+  margin: 30px 0;
+  text-align: center;
+}
+h2 {
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  margin: 0 auto;
+  //align-self: center;
+}
+p {
+  font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Regular',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #e6e6e6;
+}
 *,
 *::before,
 *::after {
