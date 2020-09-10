@@ -35,6 +35,18 @@ h2 {
   margin: 0 auto;
   //align-self: center;
 }
+h3 {
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+}
+h4 {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
 p {
   font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Regular',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
