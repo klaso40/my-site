@@ -18,20 +18,40 @@
           title="App development"
           :nuxt-link="{ name: 'appDevelopment' }"
           :image-path="require('~/assets/app-development.svg')"
-        />
+        >
+          <p>
+            Tvorbe mobilných aplikácií sa venujem ako svojmu koníčku popri
+            tvorbe webov. Aplikácie vyvíjam hlavne v technológií Flutter. V
+            poslednom čase som sa začal taktiež učiť aj tvorbu mobilných
+            aplikácií vo SwiftUI.
+          </p>
+        </InterestCard>
       </div>
       <div class="column">
         <InterestCard
           title="Web development"
           :nuxt-link="{ name: 'webDevelopment' }"
           :image-path="require('~/assets/web-development.svg')"
-        />
+        >
+          <p>
+            Web developmentu sa venujem už dlhšiu dobu (venujem sa hlavne
+            front-endu). Viem pracovať s reaktívnym frameworkom Vue a jeho
+            hlavnými knižnicami Vue Router, VueX, Vuetify a nerobí mi problém
+            ani práca s Nuxt.js.
+          </p>
+        </InterestCard>
       </div>
       <div class="column">
         <InterestCard
           title="Dizajn"
           :image-path="require('~/assets/design.svg')"
-        />
+          ><p>
+            Vo svojom voľnom čase sa venujem hlavne dizajnu mobilných aplikácií
+            a webov. Dizajnér nie som no všetky moje aplikácie a weby, ktoré som
+            vytvoril som si nadizajnoval sám a chcem sa v danom odvetví naďalej
+            zdokonaľovať.
+          </p>
+        </InterestCard>
       </div>
     </div>
     <h1>Pracujem hlavne s</h1>
@@ -128,6 +148,10 @@ h2 {
   img {
     width: 150px;
   }
+}
+
+.columns {
+  margin-top: 50px;
 }
 
 /* .title {

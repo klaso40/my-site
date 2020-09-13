@@ -2,12 +2,7 @@
   <div>
     <img :src="imagePath" alt="" />
     <h4>{{ title }}</h4>
-    <p>
-      Bonbon ice cream lollipop. Cake dessert chocolate cheesecake marzipan.
-      Chocolate cake toffee chocolate fruitcake jelly sweet sugar plum jelly
-      beans. Jelly-o brownie sweet roll topping. Cupcake biscuit jelly. Gummi
-      bears sesame snaps carrot cake.
-    </p>
+    <slot></slot>
     <div v-if="Object.keys(nuxtLink).length != 0" class="my-link">
       <nuxt-link :to="nuxtLink"
         >Zisti viac <img src="~/assets/arrow.svg" alt=""

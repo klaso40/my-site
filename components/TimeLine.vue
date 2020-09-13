@@ -12,17 +12,9 @@
     <div class="time-line-content">
       <h3>{{ year }}</h3>
       <h4>{{ school }}</h4>
-      <p>
-        Gummies sweet biscuit brownie pastry bonbon chocolate cake candy canes.
-        Icing cheesecake croissant tart sugar plum sesame snaps brownie. Lemon
-        drops wafer candy lemon drops ice cream tiramisu powder lemon drops.
-      </p>
+      <slot name="first"></slot>
       <br />
-      <p>
-        Gummies sweet biscuit brownie pastry bonbon chocolate cake candy canes.
-        Icing cheesecake croissant tart sugar plum sesame snaps brownie. Lemon
-        drops wafer candy lemon drops ice cream tiramisu powder lemon drops.
-      </p>
+      <slot name="second"></slot>
     </div>
   </div>
 </template>

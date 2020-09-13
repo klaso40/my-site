@@ -7,12 +7,12 @@
       </div>
       <div class="column intro">
         <p>
-          Sesame snaps apple pie sesame snaps chocolate pastry jelly halvah
-          lollipop croissant. Topping jujubes dragée oat cake sweet cake tootsie
-          roll. Chocolate tart chocolate chocolate bar chupa chups. Jelly
-          gingerbread marzipan jelly-o. Halvah tiramisu fruitcake pudding
-          chocolate chocolate cake sweet roll biscuit. Cupcake pie jelly.
-          Lollipop tart tiramisu pastry cake croissant.
+          App developmentu sa venujem ako svojmu koníčku popri tvorbe webov.
+          Aplikácie tvorím hlavne v technológií Flutter. Flutter som si vybral
+          kvôli jeho flexibilite. Vo Flutteri totiž môžem tvoriť ako aplikácie
+          pre IOS tak aj pre Android. Taktiež som vytvoril aj niekoľko aplikácií
+          a jednu som aj zverejnil na Google play a App Store. V poslednom čase
+          som sa začal venovať aj tvorbe aplikácií vo SwiftUI.
         </p>
       </div>
     </div>
@@ -21,13 +21,29 @@
         <CardComponent
           title="SwiftUI"
           :img-path="require('~/assets/swift.svg')"
-        />
+        >
+          <p>
+            Technológií SwiftUI som sa začal venovať iba nedávno. Spravil som si
+            v nej zopár aplikácií no zatiaľ ešte nie som expert v danom odvetví.
+            Samozrejme mám záujem sa v tejto technológií naďalej zlepšovať a
+            vytvoriť v nej aj zopár aplikácií, ktoré by boli vhodné na
+            publikáciu.
+          </p>
+        </CardComponent>
       </div>
       <div class="column">
         <CardComponent
           title="Flutter"
           :img-path="require('~/assets/flutter.svg')"
-        />
+        >
+          <p>
+            Technológií Flutter sa venujem už asi rok. Vo Flutteri som spravil
+            niekoľko aplikácií a jednu som aj vydal. Flutter je UI toolkit od
+            spoločnosti Google vyvinutý na tvorbu aplikácií pre IOS, Android no
+            aj pre web a klasické desktopy. Vo Flutteri som si zatiaľ vyskúšal
+            len tvorbu mobilných aplikácií.
+          </p>
+        </CardComponent>
       </div>
     </div>
     <h1>Moje aplikácie</h1>

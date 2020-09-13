@@ -6,19 +6,23 @@
     <div class="column">
       <h2>WS List</h2>
       <p>
-        Wafer gummies tart pie pie chocolate. Macaroon jelly lollipop chupa
-        chups cake gummies. Fruitcake pudding icing sweet roll toffee donut
-        icing topping. Oat cake danish cupcake jujubes cake dragée jujubes
-        bonbon. Gingerbread ice cream wafer soufflé icing tart bear claw cake.
-        Muffin caramels caramels sesame snaps tart bonbon powder ice cream.
-        <br />
-        <br />
-        Fruitcake cookie jelly-o donut. Topping pudding liquorice gingerbread
-        bonbon pie. Marzipan oat cake ice cream cake. Fruitcake lemon drops
-        sugar plum oat cake chocolate lollipop bear claw chupa chups. Sweet
-        halvah lemon drops sweet roll tootsie roll jelly. Chocolate bar icing
-        soufflé tart. Bonbon cotton candy cookie cake. Cookie oat cake brownie.
+        WS List je krásny jednoduchý to-do list, pomocou ktorého sa stanú tvoje
+        dni viac zorganizované a menej stresujúce.
       </p>
+      <p>
+        Vďaka aplikácií WS List môžeš ľahko a pohodlne usporadúvať svoje úlohy,
+        či už sa jedná o školu, prácu alebo domácnosť. Prostredníctvom
+        intuitívneho dizajnu aplikácie sa v nej rýchlo a ľahko zorientuješ.
+      </p>
+      <div class="my-list">
+        WS List ti umožňuje:
+        <ul>
+          <li>Jednoduché usporiadanie úloh do vlastných zoznamov</li>
+          <li>Vytváranie úloh kedykoľvek a kdekoľvek</li>
+          <li>Zostať informovaným vďaka upozorneniam a nič nezmeškať</li>
+          <li>Formovať vlastné zoznamy odlišnými farbami</li>
+        </ul>
+      </div>
 
       <StoreButton
         :img-path="require('~/assets/google-play.svg')"
@@ -57,6 +61,17 @@ export default {
   }
 }
 p {
-  margin: 60px 0;
+  margin: 20px 0;
+}
+.my-list {
+  color: white;
+  ul {
+    list-style-type: disc;
+
+    list-style-position: inside;
+  }
+  // ul li::before {
+  //   content: '\200B';
+  // }
 }
 </style>

@@ -4,14 +4,7 @@
       <img :src="imgPath" alt="" />
       <h2>{{ title }}</h2>
     </div>
-    <p>
-      Wafer gummies tart pie pie chocolate. Macaroon jelly lollipop chupa chups
-      cake gummies. Fruitcake pudding icing sweet roll toffee donut icing
-      topping. Oat cake danish cupcake jujubes cake dragée jujubes bonbon.
-      Gingerbread ice cream wafer soufflé icing tart bear claw cake. Muffin
-      caramels caramels sesame snaps tart bonbon powder ice cream. Fruitcake
-      cookie jelly-o donut. Topping pudding liquorice gingerbread bonbon pie.
-    </p>
+    <slot></slot>
   </div>
 </template>
 
@@ -38,6 +31,7 @@ export default {
   align-items: center;
   img {
     width: 70px;
+    position: absolute;
   }
 }
 </style>
