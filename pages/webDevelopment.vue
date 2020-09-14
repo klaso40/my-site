@@ -3,7 +3,7 @@
     <h1>Web development</h1>
     <div class="columns">
       <div class="column">
-        <img src="~/assets/web-development.svg" alt="" />
+        <img class="main-image" src="~/assets/web-development.svg" alt="" />
       </div>
       <div class="column intro">
         <p>
@@ -121,6 +121,11 @@ export default {
   }
   .laravel-and-vue {
     height: 350px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    margin: 0 10px;
   }
 }
 </style>

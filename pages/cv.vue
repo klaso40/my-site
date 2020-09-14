@@ -159,4 +159,17 @@ export default {
     text-align: center;
   }
 }
+@media (max-width: 768px) {
+  .container {
+    margin: 0 10px;
+  }
+  .astronaut {
+    height: 200px !important;
+    margin: 20px 0 !important;
+  }
+  .teaching {
+    height: 200px !important;
+    margin: 20px 0 !important;
+  }
+}
 </style>

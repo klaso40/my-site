@@ -68,4 +68,10 @@ export default {
   justify-content: center;
   flex-direction: column;
 }
+
+@media (max-width: 768px) {
+  .container {
+    margin: 0 10px;
+  }
+}
 </style>

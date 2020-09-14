@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="my-card">
     <div class="my-card-title">
       <img :src="imgPath" alt="" />
       <h2>{{ title }}</h2>
@@ -34,4 +34,12 @@ export default {
     position: absolute;
   }
 }
+// @media (max-width: 768px) {
+//   .my-card {
+//     margin: 0 10px;
+//     img {
+//       width: 50px;
+//     }
+//   }
+// }
 </style>

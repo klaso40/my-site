@@ -153,7 +153,32 @@ h2 {
 .columns {
   margin-top: 50px;
 }
-
+@media (max-width: 768px) {
+  .container {
+    margin: 0 10px;
+    .center {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      #my-title {
+        font-size: 24px;
+      }
+      .button {
+        margin: 10px auto;
+      }
+    }
+    .images-container {
+      text-align: center;
+    }
+    h2 {
+      margin: 15px 0;
+    }
+    .columns {
+      margin-top: 0px;
+    }
+  }
+}
 /* .title {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;

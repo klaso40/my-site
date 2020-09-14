@@ -7,6 +7,10 @@
 </template>
 
 <style lang="scss">
+@font-face {
+  font-family: 'Montserrat';
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+}
 $background-color: #0a1b37;
 html {
   font-family: 'Lucida Grande', -apple-system, BlinkMacSystemFont, 'Segoe UI',
@@ -21,26 +25,35 @@ html {
   background: $background-color;
 }
 h1 {
-  font-family: Montserrat;
-  font-weight: bold;
+  font-family: 'Montserrat';
+  font-weight: 700;
   color: white;
   font-size: 52px;
   margin: 30px 0;
   text-align: center;
+  @media (max-width: 768px) {
+    font-size: 30px;
+  }
 }
 h2 {
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 700;
   color: white;
   margin: 0 auto;
   //align-self: center;
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
 }
 h3 {
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-size: 32px;
-  font-weight: bold;
+  font-weight: 700;
   color: white;
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
 }
 h4 {
   font-family: Montserrat;

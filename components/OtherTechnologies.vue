@@ -8,7 +8,9 @@
       <div class="column">
         <img src="~/assets/javascript.svg" alt="javascript" />
       </div>
-      <div class="column"><img src="~/assets/babel.svg" alt="babel" /></div>
+      <div class="column">
+        <img class="babel" src="~/assets/babel.svg" alt="babel" />
+      </div>
     </div>
     <div class="columns">
       <div class="column">
@@ -16,7 +18,9 @@
       </div>
       <div class="column"><img src="~/assets/bulma.svg" alt="bulma" /></div>
       <div class="column"><img src="~/assets/php.svg" alt="php" /></div>
-      <div class="column"><img src="~/assets/npm.svg" alt="npm" /></div>
+      <div class="column">
+        <img class="npm" src="~/assets/npm.svg" alt="npm" />
+      </div>
       <div class="column"><img src="~/assets/github.svg" alt="github" /></div>
     </div>
   </div>
@@ -39,5 +43,14 @@ export default {}
 }
 img {
   height: 150px;
+}
+@media (max-width: 768px) {
+  .columns {
+    text-align: center;
+    .babel,
+    .npm {
+      width: 260px;
+    }
+  }
 }
 </style>
