@@ -40,7 +40,7 @@ export default {
 div {
   background: #22324b;
   padding: 15px 20px;
-  height: 580px;
+  height: calc(100%);
   border-radius: 10px;
   position: relative;
   img {
@@ -50,9 +50,10 @@ div {
     margin: 15px 0;
   }
   .my-link {
-    position: absolute;
-    bottom: 10px;
-    right: 20px;
+    //position: absolute;
+    //bottom: 10px;
+    //right: 20px;
+
     height: fit-content;
     width: fit-content;
 
@@ -67,6 +68,11 @@ div {
       right: 20px;
       width: 50px;
     }
+  }
+}
+@media (max-width: 768px) {
+  div {
+    text-align: center;
   }
 }
 </style>

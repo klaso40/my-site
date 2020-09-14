@@ -48,16 +48,16 @@ h2 {
 }
 h3 {
   font-family: 'Montserrat';
-  font-size: 32px;
+  font-size: 22px;
   font-weight: 700;
   color: white;
-  @media (max-width: 768px) {
-    font-size: 24px;
-  }
+  // @media (max-width: 768px) {
+  //   font-size: 24px;
+  // }
 }
 h4 {
   font-family: Montserrat;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold;
   color: white;
 }

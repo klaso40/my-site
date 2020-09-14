@@ -161,6 +161,7 @@ h2 {
       display: flex;
       flex-direction: column;
       text-align: center;
+      justify-content: space-evenly;
       #my-title {
         font-size: 24px;
       }
@@ -176,6 +177,43 @@ h2 {
     }
     .columns {
       margin-top: 0px;
+    }
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    //margin: 0 10px;
+    .center {
+      .photo {
+        width: 278px;
+        height: 275px;
+      }
+      #my-title {
+        font-size: 26px;
+      }
+      .astronaut-container {
+        width: 250px;
+        height: 250px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1408px) {
+  .container {
+    //margin: 0 10px;
+    .center {
+      .photo {
+        width: 278px;
+        height: 275px;
+      }
+      #my-title {
+        font-size: 26px;
+      }
+      .astronaut-container {
+        width: 250px;
+        height: 250px;
+      }
     }
   }
 }
