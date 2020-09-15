@@ -59,6 +59,29 @@ export default {
     CardComponent,
     MyAppComponent,
   },
+  // transition: {
+  //   enterActiveClass: 'animate__animated animate__slideInLeft',
+  //   leaveActiveClass: 'animate__animated animate__slideInRight',
+  // },
+  transition(to, from) {
+    // Entering
+    if (!from) {
+      return { enterActiveClass: 'animate__animated animate__fadeIn' }
+    }
+    if (from.path === '/webDevelopment' || from.path === '/cv') {
+      return { enterActiveClass: 'animate__animated animate__fadeInLeft' }
+    }
+    if (from.path === '/') {
+      return { enterActiveClass: 'animate__animated animate__fadeInRight' }
+    }
+    // Leaving
+    if (to.path === '/webDevelopment' || to.path === '/cv') {
+      return { leaveActiveClass: 'animate__animated animate__fadeOutLeft' }
+    } else if (to.path === '/') {
+      return { leaveActiveClass: 'animate__animated animate__fadeOutRight' }
+    }
+    return +to.query.page < +from.query.page ? 'slide-right' : 'slide-left'
+  },
 }
 </script>
 

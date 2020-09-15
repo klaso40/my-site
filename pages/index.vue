@@ -87,6 +87,20 @@ export default {
     InterestCard,
     OtherTechnologies,
   },
+  transition(to, from) {
+    // Entering
+    if (!from) {
+      return { enterActiveClass: 'animate__animated animate__fadeIn' }
+    }
+    if (from) {
+      return {
+        enterActiveClass: 'animate__animated animate__fadeInLeft',
+        leaveActiveClass: 'animate__animated animate__fadeOutLeft',
+      }
+    }
+
+    return +to.query.page < +from.query.page ? 'slide-right' : 'slide-left'
+  },
 }
 </script>
 

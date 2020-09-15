@@ -136,6 +136,20 @@ export default {
     CardComponent,
     OtherTechnologies,
   },
+  transition(to, from) {
+    // Entering
+    if (!from) {
+      return {}
+    }
+    if (from) {
+      return {
+        enterActiveClass: 'animate__animated animate__fadeInRight',
+        leaveActiveClass: 'animate__animated animate__fadeOutRight',
+      }
+    }
+
+    return +to.query.page < +from.query.page ? 'slide-right' : 'slide-left'
+  },
 }
 </script>
 
