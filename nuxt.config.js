@@ -34,7 +34,7 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: ['@/plugins/animate.js'],
+  plugins: ['@/plugins/animate.js', { src: '@/plugins/gsap.js', ssr: false }],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
@@ -59,6 +59,7 @@ export default {
    ** See https://nuxtjs.org/api/configuration-build/
    */
   build: {
+    transpile: ['gsap'],
     postcss: {
       preset: {
         features: {

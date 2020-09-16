@@ -22,7 +22,8 @@
     <div class="columns">
       <div class="column">
         <CardComponent title="Vue.js" :img-path="require('~/assets/vue.svg')">
-          <p>
+          <VueLogo slot="image" width="70px" />
+          <p slot="text">
             Vue je takzvaný reaktívny framework. Na weboch nám pomáha s tvorbou
             UI. Taktiež nám umožňuje tvorbu takzvaných Single Page Applications.
             S Vue pracujem už dlhšiu dobu a taktiež som sa zoznámil aj s jeho
@@ -34,7 +35,8 @@
           </p>
         </CardComponent>
         <CardComponent title="Nuxt.js" :img-path="require('~/assets/nuxt.svg')">
-          <p>
+          <NuxtLogo slot="image" width="70px" />
+          <p slot="text">
             Nuxt je Vue framework, ktorý sa využíva hlavne pri tvorbe hlavne
             väčších projektov, ale pre prezentáciu som ho použil aj pri tvorbe
             tejto stránky. Nuxt napríklad rozširuje klasickú priečinkovú
@@ -48,11 +50,9 @@
             aplikácie.
           </p>
         </CardComponent>
-        <CardComponent
-          title="Vuetify"
-          :img-path="require('~/assets/vuetify.svg')"
-        >
-          <p>
+        <CardComponent title="Vuetify">
+          <VuetifyLogo slot="image" width="70px" />
+          <p slot="text">
             Vuetify je intuitívna Vue UI knižnica postavená na material designe.
             Je pravidelne aktualizovaná, má aktívnu komunitu a funguje vo
             všetkých webových prehliadačoch. Podobne ako každá Vue aplikácia je
@@ -62,11 +62,9 @@
             (napríklad rôzne admin panely alebo užívateľská sekcia na stránke).
           </p>
         </CardComponent>
-        <CardComponent
-          title="Laravel"
-          :img-path="require('~/assets/laravel.svg')"
-        >
-          <p>
+        <CardComponent title="Laravel">
+          <LaravelLogo slot="image" width="70px" />
+          <p slot="text">
             Laravel ja PHP framework, ktorý sa využíva ako pri tvorbe front-endu
             tak aj pri tvorbe back-endu. Ja sa venujem hlavne front-end stránke
             Laravelu. Mám skúsenosti s implementáciou Vue do Laravelu, či už ako
@@ -93,10 +91,18 @@
 <script>
 import CardComponent from '../components/CardComponent.vue'
 import OtherTechnologies from '../components/OtherTechnologies.vue'
+import VueLogo from '../components/animations/VueLogo.vue'
+import NuxtLogo from '../components/animations/NuxtLogo.vue'
+import VuetifyLogo from '../components/animations/VuetifyLogo.vue'
+import LaravelLogo from '../components/animations/LaravelLogo.vue'
 export default {
   components: {
     CardComponent,
     OtherTechnologies,
+    VueLogo,
+    NuxtLogo,
+    VuetifyLogo,
+    LaravelLogo,
   },
   transition(to, from) {
     // Entering

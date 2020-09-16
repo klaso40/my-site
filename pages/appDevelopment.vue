@@ -18,11 +18,9 @@
     </div>
     <div class="columns">
       <div class="column">
-        <CardComponent
-          title="SwiftUI"
-          :img-path="require('~/assets/swift.svg')"
-        >
-          <p>
+        <CardComponent title="SwiftUI">
+          <SwiftUILogo slot="image" width="70px" />
+          <p slot="text">
             Technológií SwiftUI som sa začal venovať iba nedávno. Spravil som si
             v nej zopár aplikácií no zatiaľ ešte nie som expert v danom odvetví.
             Samozrejme mám záujem sa v tejto technológií naďalej zlepšovať a
@@ -32,11 +30,9 @@
         </CardComponent>
       </div>
       <div class="column">
-        <CardComponent
-          title="Flutter"
-          :img-path="require('~/assets/flutter.svg')"
-        >
-          <p>
+        <CardComponent title="Flutter">
+          <FlutterLogo slot="image" width="70px" />
+          <p slot="text">
             Technológií Flutter sa venujem už asi rok. Vo Flutteri som spravil
             niekoľko aplikácií a jednu som aj vydal. Flutter je UI toolkit od
             spoločnosti Google vyvinutý na tvorbu aplikácií pre IOS, Android no
@@ -54,10 +50,14 @@
 <script>
 import CardComponent from '../components/CardComponent.vue'
 import MyAppComponent from '../components/MyAppComponent.vue'
+import FlutterLogo from '../components/animations/FlutterLogo.vue'
+import SwiftUILogo from '../components/animations/SwiftUILogo.vue'
 export default {
   components: {
     CardComponent,
     MyAppComponent,
+    FlutterLogo,
+    SwiftUILogo,
   },
   // transition: {
   //   enterActiveClass: 'animate__animated animate__slideInLeft',

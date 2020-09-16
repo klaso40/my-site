@@ -43,7 +43,8 @@
       <div class="column">
         <h2>Zručnosti</h2>
         <CardComponent title="Vue.js" :img-path="require('~/assets/vue.svg')">
-          <p>
+          <VueLogo slot="image" width="70px" />
+          <p slot="text">
             Vue je takzvaný reaktívny framework. Na weboch nám pomáha s tvorbou
             UI. Taktiež nám umožňuje tvorbu takzvaných Single Page Applications.
             S Vue pracujem už dlhšiu dobu a taktiež som sa zoznámil aj s jeho
@@ -55,7 +56,8 @@
           </p>
         </CardComponent>
         <CardComponent title="Nuxt.js" :img-path="require('~/assets/nuxt.svg')">
-          <p>
+          <NuxtLogo slot="image" width="70px" />
+          <p slot="text">
             Nuxt je Vue framework, ktorý sa využíva hlavne pri tvorbe hlavne
             väčších projektov, ale pre prezentáciu som ho použil aj pri tvorbe
             tejto stránky. Nuxt napríklad rozširuje klasickú priečinkovú
@@ -69,11 +71,9 @@
             aplikácie.
           </p>
         </CardComponent>
-        <CardComponent
-          title="Vuetify"
-          :img-path="require('~/assets/vuetify.svg')"
-        >
-          <p>
+        <CardComponent title="Vuetify">
+          <VuetifyLogo slot="image" width="70px" />
+          <p slot="text">
             Vuetify je intuitívna Vue UI knižnica postavená na material designe.
             Je pravidelne aktualizovaná, má aktívnu komunitu a funguje vo
             všetkých webových prehliadačoch. Podobne ako každá Vue aplikácia je
@@ -83,11 +83,9 @@
             (napríklad rôzne admin panely alebo užívateľská sekcia na stránke).
           </p>
         </CardComponent>
-        <CardComponent
-          title="Laravel"
-          :img-path="require('~/assets/laravel.svg')"
-        >
-          <p>
+        <CardComponent title="Laravel">
+          <LaravelLogo slot="image" width="70px" />
+          <p slot="text">
             Laravel ja PHP framework, ktorý sa využíva ako pri tvorbe front-endu
             tak aj pri tvorbe back-endu. Ja sa venujem hlavne front-end stránke
             Laravelu. Mám skúsenosti s implementáciou Vue do Laravelu, či už ako
@@ -96,11 +94,9 @@
             Laravelu sa nevenujem.
           </p>
         </CardComponent>
-        <CardComponent
-          title="SwiftUI"
-          :img-path="require('~/assets/swift.svg')"
-        >
-          <p>
+        <CardComponent title="SwiftUI">
+          <SwiftUILogo slot="image" width="70px" />
+          <p slot="text">
             Technológií SwiftUI som sa začal venovať iba nedávno. Spravil som si
             v nej zopár aplikácií no zatiaľ ešte nie som expert v danom odvetví.
             Samozrejme mám záujem sa v tejto technológií naďalej zlepšovať a
@@ -108,11 +104,9 @@
             publikáciu.
           </p>
         </CardComponent>
-        <CardComponent
-          title="Flutter"
-          :img-path="require('~/assets/flutter.svg')"
-        >
-          <p>
+        <CardComponent title="Flutter">
+          <FlutterLogo slot="image" width="70px" />
+          <p slot="text">
             Technológií Flutter sa venujem už asi rok. Vo Flutteri som spravil
             niekoľko aplikácií a jednu som aj vydal. Flutter je UI toolkit od
             spoločnosti Google vyvinutý na tvorbu aplikácií pre IOS, Android no
@@ -130,11 +124,23 @@
 import TimeLine from '../components/TimeLine'
 import CardComponent from '../components/CardComponent'
 import OtherTechnologies from '../components/OtherTechnologies'
+import VueLogo from '../components/animations/VueLogo.vue'
+import NuxtLogo from '../components/animations/NuxtLogo.vue'
+import VuetifyLogo from '../components/animations/VuetifyLogo.vue'
+import LaravelLogo from '../components/animations/LaravelLogo.vue'
+import FlutterLogo from '../components/animations/FlutterLogo.vue'
+import SwiftUILogo from '../components/animations/SwiftUILogo.vue'
 export default {
   components: {
     TimeLine,
     CardComponent,
     OtherTechnologies,
+    VueLogo,
+    NuxtLogo,
+    VuetifyLogo,
+    LaravelLogo,
+    FlutterLogo,
+    SwiftUILogo,
   },
   transition(to, from) {
     // Entering

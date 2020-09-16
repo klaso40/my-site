@@ -1,10 +1,11 @@
 <template>
   <div class="my-card">
     <div class="my-card-title">
-      <img :src="imgPath" alt="" />
+      <div class="image"><slot name="image"> </slot></div>
+
       <h2>{{ title }}</h2>
     </div>
-    <slot></slot>
+    <slot name="text"></slot>
   </div>
 </template>
 
@@ -29,7 +30,7 @@ export default {
   flex-direction: row;
   margin: 30px 0;
   align-items: center;
-  img {
+  .image {
     width: 70px;
     position: absolute;
   }
