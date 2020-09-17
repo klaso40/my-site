@@ -3,7 +3,7 @@
     <h1>Web development</h1>
     <div class="columns">
       <div class="column">
-        <img class="main-image" src="~/assets/web-development.svg" alt="" />
+        <WebDevelopmentImage />
       </div>
       <div class="column intro">
         <p>
@@ -75,7 +75,8 @@
         </CardComponent>
       </div>
       <div class="column img-column">
-        <img src="~/assets/rocket.svg" alt="" class="rocket" />
+        <RocketImage class="rocket" />
+
         <img src="~/assets/town.svg" alt="" class="town" />
         <img
           src="~/assets/laravel_and_vue.svg"
@@ -95,6 +96,8 @@ import VueLogo from '../components/animations/VueLogo.vue'
 import NuxtLogo from '../components/animations/NuxtLogo.vue'
 import VuetifyLogo from '../components/animations/VuetifyLogo.vue'
 import LaravelLogo from '../components/animations/LaravelLogo.vue'
+import WebDevelopmentImage from '../components/animations/WebDevelopmentImage.vue'
+import RocketImage from '../components/animations/RocketImage.vue'
 export default {
   components: {
     CardComponent,
@@ -103,6 +106,8 @@ export default {
     NuxtLogo,
     VuetifyLogo,
     LaravelLogo,
+    WebDevelopmentImage,
+    RocketImage,
   },
   transition(to, from) {
     // Entering
