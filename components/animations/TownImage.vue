@@ -968,8 +968,12 @@ export default {
       },
       '<.5'
     )
-    gsap.fromTo(
+    const clouds = gsap.timeline({
+      repeat: -1,
+    })
+    clouds.fromTo(
       '#clouds',
+
       {
         transform: 'translateX(-700px)',
       },
