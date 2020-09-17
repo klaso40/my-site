@@ -144,6 +144,7 @@ export default {
 .img-column {
   display: flex;
   flex-direction: column;
+  align-items: center;
   .rocket {
     height: 300px;
   }
