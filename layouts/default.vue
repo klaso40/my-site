@@ -67,6 +67,7 @@ p {
   font-size: 16px;
   font-weight: normal;
   color: #e6e6e6;
+  line-height: 24px;
 }
 *,
 *::before,
