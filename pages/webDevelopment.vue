@@ -79,11 +79,12 @@
 
         <!-- <img src="~/assets/town.svg" alt="" class="town" /> -->
         <TownImage class="town" />
-        <img
+        <LaravelAndVueImage />
+        <!-- <img
           src="~/assets/laravel_and_vue.svg"
           alt=""
           class="laravel-and-vue"
-        />
+        /> -->
       </div>
     </div>
     <OtherTechnologies />
@@ -100,6 +101,7 @@ import LaravelLogo from '../components/animations/LaravelLogo.vue'
 import WebDevelopmentImage from '../components/animations/WebDevelopmentImage.vue'
 import RocketImage from '../components/animations/RocketImage.vue'
 import TownImage from '../components/animations/TownImage.vue'
+import LaravelAndVueImage from '../components/animations/LaravelAndVueImage'
 export default {
   components: {
     CardComponent,
@@ -111,6 +113,7 @@ export default {
     WebDevelopmentImage,
     RocketImage,
     TownImage,
+    LaravelAndVueImage,
   },
   transition(to, from) {
     // Entering
