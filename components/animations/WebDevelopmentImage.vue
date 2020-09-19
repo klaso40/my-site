@@ -250,7 +250,7 @@ export default {
       },
       {
         transform: 'translateY(30px)',
-
+        delay: 0.5,
         duration: 2,
         ease: 'easeInOut',
       }

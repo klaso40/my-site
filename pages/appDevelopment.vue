@@ -3,7 +3,8 @@
     <h1>App development</h1>
     <div class="columns">
       <div class="column">
-        <img src="~/assets/app-development.svg" alt="" />
+        <!-- <img src="~/assets/app-development.svg" alt="" /> -->
+        <AppDevelopmentImage />
       </div>
       <div class="column intro">
         <p>
@@ -19,7 +20,7 @@
     <div class="columns">
       <div class="column">
         <CardComponent title="SwiftUI">
-          <SwiftUILogo slot="image" width="70px" />
+          <SwiftUILogo slot="image" width="70px" delay="1" />
           <p slot="text">
             Technológií SwiftUI som sa začal venovať iba nedávno. Spravil som si
             v nej zopár aplikácií no zatiaľ ešte nie som expert v danom odvetví.
@@ -31,7 +32,7 @@
       </div>
       <div class="column">
         <CardComponent title="Flutter">
-          <FlutterLogo slot="image" width="70px" />
+          <FlutterLogo slot="image" width="70px" delay="1" />
           <p slot="text">
             Technológií Flutter sa venujem už asi rok. Vo Flutteri som spravil
             niekoľko aplikácií a jednu som aj vydal. Flutter je UI toolkit od
@@ -52,12 +53,14 @@ import CardComponent from '../components/CardComponent.vue'
 import MyAppComponent from '../components/MyAppComponent.vue'
 import FlutterLogo from '../components/animations/FlutterLogo.vue'
 import SwiftUILogo from '../components/animations/SwiftUILogo.vue'
+import AppDevelopmentImage from '../components/animations/AppDevelopmentImage.vue'
 export default {
   components: {
     CardComponent,
     MyAppComponent,
     FlutterLogo,
     SwiftUILogo,
+    AppDevelopmentImage,
   },
   // transition: {
   //   enterActiveClass: 'animate__animated animate__slideInLeft',

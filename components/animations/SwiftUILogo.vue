@@ -12,6 +12,10 @@ export default {
       type: String,
       default: '70px',
     },
+    delay: {
+      type: Number,
+      default: 0.5,
+    },
   },
   mounted() {
     gsap.fromTo(
@@ -25,7 +29,7 @@ export default {
           trigger: '#swiftUILogo',
           start: 'bottom bottom',
         },
-        delay: 0.5,
+        delay: this.delay,
         duration: 1,
       }
     )

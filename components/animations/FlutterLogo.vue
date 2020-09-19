@@ -38,6 +38,10 @@ export default {
       type: String,
       default: '64px',
     },
+    delay: {
+      type: Number,
+      default: 0.5,
+    },
   },
   mounted() {
     const tl = gsap.timeline({
@@ -55,7 +59,7 @@ export default {
       {
         transform: 'translateX(0px)',
         opacity: 1,
-        delay: 0.5,
+        delay: this.delay,
       },
       '<'
     )
