@@ -1,25 +1,28 @@
 <template>
-  <div>
+  <div id="timeLine">
     <div class="time-line">
-      <div class="circle"></div>
+      <div id="circle" class="circle"></div>
       <div class="border-line-container">
-        <div class="border-line"></div>
-        <div class="border-line"></div>
-        <div class="border-line"></div>
-        <div class="border-line"></div>
+        <div id="border-1" class="border-line"></div>
+        <div id="border-2" class="border-line"></div>
+        <div id="border-3" class="border-line"></div>
+        <div id="border-4" class="border-line"></div>
       </div>
     </div>
     <div class="time-line-content">
-      <h3>{{ year }}</h3>
-      <h4>{{ school }}</h4>
-      <slot name="first"></slot>
-      <br />
-      <slot name="second"></slot>
+      <h3 id="year">{{ year }}</h3>
+      <h4 id="school">{{ school }}</h4>
+      <div id="text">
+        <slot name="first"></slot>
+        <br />
+        <slot name="second"></slot>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import gsap from 'gsap'
 export default {
   props: {
     year: {
@@ -31,11 +34,129 @@ export default {
       default: '',
     },
   },
+  mounted() {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: '#timeLine',
+        start: 'bottom bottom',
+      },
+    })
+    tl.fromTo(
+      '#circle',
+      {
+        opacity: 0,
+        transform: 'scale(0,0)',
+        transformOrigin: 'top',
+      },
+      {
+        opacity: 1,
+        duration: 0.3,
+        transform: 'scale(1,1)',
+
+        ease: 'ease',
+      }
+    )
+    tl.fromTo(
+      '#year',
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        duration: 0.3,
+        ease: 'ease',
+      }
+    )
+    tl.fromTo(
+      '#school',
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        duration: 0.3,
+        ease: 'ease',
+      }
+    )
+    tl.fromTo(
+      '#border-1',
+      {
+        opacity: 0,
+        transform: 'scale(0,0)',
+        transformOrigin: 'top',
+      },
+      {
+        opacity: 1,
+        duration: 0.3,
+        transform: 'scale(1,1)',
+
+        ease: 'ease',
+      }
+    )
+    tl.fromTo(
+      '#border-2',
+      {
+        opacity: 0,
+        transform: 'scale(0,0)',
+        transformOrigin: 'top',
+      },
+      {
+        opacity: 1,
+        duration: 0.3,
+        transform: 'scale(1,1)',
+
+        ease: 'ease',
+      }
+    )
+    tl.fromTo(
+      '#border-3',
+      {
+        opacity: 0,
+        transform: 'scale(0,0)',
+        transformOrigin: 'top',
+      },
+      {
+        opacity: 1,
+        duration: 0.3,
+        transform: 'scale(1,1)',
+
+        ease: 'ease',
+      }
+    )
+    tl.fromTo(
+      '#border-4',
+      {
+        opacity: 0,
+        transform: 'scale(0,0)',
+        transformOrigin: 'top',
+      },
+      {
+        opacity: 1,
+        duration: 0.3,
+        transform: 'scale(1,1)',
+
+        ease: 'ease',
+      }
+    )
+    tl.fromTo(
+      '#text',
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        duration: 0.3,
+        transform: 'scale(1,1)',
+
+        ease: 'ease',
+      }
+    )
+  },
 }
 </script>
 
 <style lang="scss" scoped>
-div {
+#timeLine {
   display: flex;
   .time-line {
     display: flex;
