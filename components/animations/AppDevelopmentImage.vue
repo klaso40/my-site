@@ -165,7 +165,7 @@ export default {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: '#appDevelopmentImage',
-        start: 'bottom bottom',
+        // start: 'top top',
       },
     })
     tl.fromTo(

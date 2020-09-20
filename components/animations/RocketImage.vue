@@ -2,7 +2,6 @@
   <div>
     <svg
       id="rocket-image"
-      height="300"
       viewBox="0 0 1136 815"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -643,6 +642,14 @@ export default {
 <style lang="scss" scoped>
 div {
   margin: 0 auto;
+}
+svg {
+  height: 300px;
+}
+@media (max-width: 768px) {
+  svg {
+    width: 100%;
+  }
 }
 #rocket-image {
   overflow: visible;

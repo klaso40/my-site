@@ -27,9 +27,9 @@ export default {
         opacity: 1,
         scrollTrigger: {
           trigger: '#swiftUILogo',
-          start: 'bottom bottom',
+          // start: 'top top',
         },
-        delay: this.delay,
+        delay: parseFloat(this.delay),
         duration: 1,
       }
     )

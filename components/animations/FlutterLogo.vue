@@ -47,7 +47,7 @@ export default {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: '#flutterLogo',
-        start: 'bottom bottom',
+        // start: 'top top',
       },
     })
     tl.fromTo(
@@ -59,7 +59,7 @@ export default {
       {
         transform: 'translateX(0px)',
         opacity: 1,
-        delay: this.delay,
+        delay: parseFloat(this.delay),
       },
       '<'
     )

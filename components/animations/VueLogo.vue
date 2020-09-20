@@ -25,8 +25,8 @@ import gsap from 'gsap'
 export default {
   props: {
     width: {
-      type: Number,
-      default: 256,
+      type: String,
+      default: '256px',
     },
   },
   mounted() {

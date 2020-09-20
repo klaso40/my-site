@@ -992,7 +992,12 @@ div {
   //height: 50px !important;
   margin: 80px auto !important;
 }
-#car-1 {
-  z-index: 5;
+svg {
+  height: 300px;
+}
+@media (max-width: 768px) {
+  svg {
+    width: 100%;
+  }
 }
 </style>
