@@ -38,7 +38,8 @@
         <div class="img-container">
           <AstronautSpaceImage class="astronaut" />
           <!-- <img src="~/assets/astronaut-space.svg" alt="" class="astronaut" /> -->
-          <img src="~/assets/teaching.svg" alt="" class="teaching" />
+          <!-- <img src="~/assets/teaching.svg" alt="" class="teaching" /> -->
+          <TeachingImage />
         </div>
       </div>
       <div class="column">
@@ -132,6 +133,7 @@ import LaravelLogo from '../components/animations/LaravelLogo.vue'
 import FlutterLogo from '../components/animations/FlutterLogo.vue'
 import SwiftUILogo from '../components/animations/SwiftUILogo.vue'
 import AstronautSpaceImage from '../components/animations/AstronautSpaceImage.vue'
+import TeachingImage from '../components/animations/TeachingImage.vue'
 export default {
   components: {
     TimeLine,
@@ -144,6 +146,7 @@ export default {
     FlutterLogo,
     SwiftUILogo,
     AstronautSpaceImage,
+    TeachingImage,
   },
   transition(to, from) {
     // Entering
