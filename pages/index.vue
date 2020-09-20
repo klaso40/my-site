@@ -16,7 +16,7 @@
         >
       </div>
       <div class="astronaut-container">
-        <img src="~/assets/astronaut.png" alt="" />
+        <FlyingAstronautAnimation />
       </div>
     </div>
     <h2 id="products">Zaujímam sa o</h2>
@@ -102,6 +102,7 @@ import VuetifyLogo from '../components/animations/VuetifyLogo.vue'
 import LaravelLogo from '../components/animations/LaravelLogo.vue'
 import FlutterLogo from '../components/animations/FlutterLogo.vue'
 import SwiftUILogo from '../components/animations/SwiftUILogo.vue'
+import FlyingAstronautAnimation from '../components/animations/FlyingAstronaulAnimation.vue'
 export default {
   components: {
     InterestCard,
@@ -112,6 +113,7 @@ export default {
     LaravelLogo,
     FlutterLogo,
     SwiftUILogo,
+    FlyingAstronautAnimation,
   },
   transition(to, from) {
     // Entering
@@ -162,8 +164,9 @@ export default {
   .astronaut-container {
     height: 300px;
     width: 300px;
+    position: relative;
     //border-radius: 50%;
-    background: white;
+    // background: white;
     img {
       height: 150px;
     }
