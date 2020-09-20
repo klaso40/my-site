@@ -34,7 +34,11 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: ['@/plugins/animate.js', { src: '@/plugins/gsap.js', ssr: false }],
+  plugins: [
+    '@/plugins/animate.js',
+    { src: '@/plugins/gsap.js', ssr: false },
+    '@/plugins/vue-scrollto.js',
+  ],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
@@ -52,6 +56,7 @@ export default {
    */
   modules: [
     // Doc: https://github.com/nuxt-community/modules/tree/master/packages/bulma
+    'vue-scrollto/nuxt',
     '@nuxtjs/bulma',
   ],
   /*

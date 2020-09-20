@@ -5,13 +5,21 @@
       <div id="my-title">
         Ahoj, moje meno je Matúš <br />
         a som programátor
-        <button class="button">Zisti viac</button>
+        <a
+          v-scroll-to="{
+            el: '#products',
+            duration: 300,
+            easing: 'ease',
+          }"
+          class="button"
+          >Zisti viac</a
+        >
       </div>
       <div class="astronaut-container">
         <img src="~/assets/astronaut.png" alt="" />
       </div>
     </div>
-    <h2>Zaujímam sa o</h2>
+    <h2 id="products">Zaujímam sa o</h2>
     <div class="columns">
       <div class="column">
         <InterestCard
@@ -57,22 +65,28 @@
     <h1>Pracujem hlavne s</h1>
     <div class="columns images-container">
       <div class="column">
-        <img src="~/assets/vue.svg" alt="" />
+        <!-- <img src="~/assets/vue.svg" alt="" /> -->
+        <VueLogo width="100px" />
       </div>
       <div class="column">
-        <img src="~/assets/vuetify.svg" alt="" />
+        <VuetifyLogo width="100px" />
+        <!-- <img src="~/assets/vuetify.svg" alt="" /> -->
       </div>
       <div class="column">
-        <img src="~/assets/nuxt.svg" alt="" />
+        <!-- <img src="~/assets/nuxt.svg" alt="" /> -->
+        <NuxtLogo width="100px" />
       </div>
       <div class="column">
-        <img src="~/assets/laravel.svg" alt="" />
+        <!-- <img src="~/assets/laravel.svg" alt="" /> -->
+        <LaravelLogo width="100px" />
       </div>
       <div class="column">
-        <img src="~/assets/flutter.svg" alt="" />
+        <!-- <img src="~/assets/flutter.svg" alt="" /> -->
+        <FlutterLogo width="100px" />
       </div>
       <div class="column">
-        <img src="~/assets/swift.svg" alt="" />
+        <!-- <img src="~/assets/swift.svg" alt="" /> -->
+        <SwiftUILogo width="100px" />
       </div>
     </div>
     <OtherTechnologies />
@@ -82,10 +96,22 @@
 <script>
 import InterestCard from '../components/InterestCard.vue'
 import OtherTechnologies from '../components/OtherTechnologies.vue'
+import VueLogo from '../components/animations/VueLogo.vue'
+import NuxtLogo from '../components/animations/NuxtLogo.vue'
+import VuetifyLogo from '../components/animations/VuetifyLogo.vue'
+import LaravelLogo from '../components/animations/LaravelLogo.vue'
+import FlutterLogo from '../components/animations/FlutterLogo.vue'
+import SwiftUILogo from '../components/animations/SwiftUILogo.vue'
 export default {
   components: {
     InterestCard,
     OtherTechnologies,
+    VueLogo,
+    NuxtLogo,
+    VuetifyLogo,
+    LaravelLogo,
+    FlutterLogo,
+    SwiftUILogo,
   },
   transition(to, from) {
     // Entering
@@ -150,6 +176,7 @@ export default {
     width: 150px;
     margin-top: 20px;
     display: block;
+    font-weight: normal;
   }
 }
 

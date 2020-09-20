@@ -42,7 +42,7 @@ export default {}
   }
 }
 img {
-  height: 150px;
+  height: 100px;
 }
 @media (max-width: 768px) {
   .columns {
