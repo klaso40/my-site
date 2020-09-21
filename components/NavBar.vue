@@ -37,10 +37,12 @@
         </div>
 
         <div class="navbar-end">
-          <a href="" class="navbar-item"
+          <a
+            href="https://www.linkedin.com/in/mat%C3%BA%C5%A1-martin-klasovit%C3%BD-28b2b51a9/"
+            class="navbar-item"
             ><img src="~/assets/linkedin.svg" alt=""
           /></a>
-          <a href="" class="navbar-item"
+          <a href="https://twitter.com/KlasovityMatus" class="navbar-item"
             ><img src="~/assets/twitter.svg" alt=""
           /></a>
           <div class="navbar-item">
