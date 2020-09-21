@@ -2,8 +2,9 @@
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="container">
       <div class="navbar-brand">
-        <a class="navbar-item logo" href="https://bulma.io">MK</a>
-
+        <nuxt-link class="navbar-item logo" :to="{ name: 'index' }"
+          >MK</nuxt-link
+        >
         <a
           role="button"
           class="navbar-burger burger"
@@ -18,11 +19,7 @@
           <span aria-hidden="true"></span>
         </a>
       </div>
-      <div
-        id="nav-menu"
-        class="navbar-menu"
-        :class="[expanded ? 'is-active' : '']"
-      >
+      <div id="nav-menu" class="navbar-menu">
         <div class="navbar-start">
           <nuxt-link :to="{ name: 'index' }" class="navbar-item"
             >Domov</nuxt-link
@@ -47,8 +44,8 @@
             ><img src="~/assets/twitter.svg" alt=""
           /></a>
           <div class="navbar-item">
-            <nuxt-link :to="{ name: 'contact' }" class="button"
-              >Kontakt</nuxt-link
+            <a href="mailto:matus.klasovity@gmail.com" class="button"
+              >Napíš mi</a
             >
           </div>
         </div>
@@ -58,11 +55,57 @@
 </template>
 
 <script>
+import gsap from 'gsap'
 export default {
   data() {
     return {
       expanded: false,
     }
+  },
+  methods: {
+    openNavigation() {
+      gsap.fromTo(
+        '.navbar-menu',
+        {
+          visibility: 'visible',
+          background: 'transparent',
+          display: 'block',
+          height: 0,
+        },
+        {
+          height: 396,
+          duration: 0.3,
+
+          ease: 'ease-in-ou',
+        }
+      )
+    },
+    closeNavigation() {
+      gsap.fromTo(
+        '.navbar-menu',
+        {
+          height: 396,
+          visibility: 'hidden',
+        },
+        {
+          height: 0,
+          duration: 0.3,
+          ease: 'ease-in-ou',
+        }
+      )
+    },
+  },
+  watch: {
+    expanded(newValue, oldValue) {
+      if (newValue) {
+        this.openNavigation()
+      } else {
+        this.closeNavigation()
+      }
+    },
+    $route(to, from) {
+      this.expanded = false
+    },
   },
 }
 </script>
@@ -81,6 +124,7 @@ nav {
   }
   .navbar-menu {
     &.is-active {
+      display: block;
       animation: navAnimOpen 0.2s ease-in-out;
       //transition: all 0.3s ease;
       background: transparent;
@@ -119,22 +163,10 @@ nav {
     }
   }
 }
-@keyframes navAnimOpen {
-  0% {
-    display: none;
-    opacity: 0;
-    max-height: 0;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    max-height: 396px;
-  }
-}
 
+.navbar-item.logo.nuxt-link-exact-active {
+  color: white !important;
+}
 .nuxt-link-exact-active {
   color: red !important;
   background: transparent !important;
