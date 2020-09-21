@@ -31,8 +31,8 @@
           <nuxt-link :to="{ name: 'webDevelopment' }" class="navbar-item"
             >Web development</nuxt-link
           >
-          <nuxt-link :to="{ name: 'cv' }" class="navbar-item"
-            >Zivotopis</nuxt-link
+          <nuxt-link :to="{ name: 'cv' }" class="navbar-item">
+            Životopis</nuxt-link
           >
         </div>
 
@@ -63,6 +63,18 @@ export default {
     return {
       expanded: false,
     }
+  },
+  watch: {
+    expanded(newValue, oldValue) {
+      if (newValue) {
+        this.openNavigation()
+      } else {
+        this.closeNavigation()
+      }
+    },
+    $route(to, from) {
+      this.expanded = false
+    },
   },
   methods: {
     openNavigation() {
@@ -95,18 +107,6 @@ export default {
           ease: 'ease-in-ou',
         }
       )
-    },
-  },
-  watch: {
-    expanded(newValue, oldValue) {
-      if (newValue) {
-        this.openNavigation()
-      } else {
-        this.closeNavigation()
-      }
-    },
-    $route(to, from) {
-      this.expanded = false
     },
   },
 }
