@@ -44,7 +44,10 @@
       </div>
     </div>
     <h1>Moje aplikácie</h1>
-    <MyAppComponent />
+    <MyAppComponent
+      google-play="https://play.google.com/store/apps/details?id=com.webro.webrolist"
+      app-store="https://apps.apple.com/us/app/ws-list-organize-your-day/id1511701911"
+    />
   </div>
 </template>
 

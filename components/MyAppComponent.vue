@@ -28,13 +28,13 @@
         :img-path="require('~/assets/google-play.svg')"
         title="GET IT ON"
         description="Google play"
-        link=""
+        :link="googlePlay"
       />
       <StoreButton
         :img-path="require('~/assets/apple.svg')"
         title="Donwload on the"
         description="App Store"
-        link=""
+        :link="appStore"
       />
     </div>
   </div>
@@ -45,6 +45,16 @@ import StoreButton from '../components/StoreButton.vue'
 export default {
   components: {
     StoreButton,
+  },
+  props: {
+    googlePlay: {
+      type: String,
+      default: '',
+    },
+    appStore: {
+      type: String,
+      default: '',
+    },
   },
 }
 </script>

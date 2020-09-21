@@ -56,7 +56,7 @@ html {
   background: $background-color;
 }
 h1 {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: white;
   font-size: 52px;
@@ -67,7 +67,7 @@ h1 {
   }
 }
 h2 {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-size: 40px;
   font-weight: 700;
   color: white;
@@ -78,7 +78,7 @@ h2 {
   }
 }
 h3 {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-size: 22px;
   font-weight: 700;
   color: white;
@@ -87,7 +87,7 @@ h3 {
   // }
 }
 h4 {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 22px;
   font-weight: bold;
   color: white;
