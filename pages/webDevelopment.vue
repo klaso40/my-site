@@ -115,6 +115,19 @@ export default {
     TownImage,
     LaravelAndVueImage,
   },
+  head() {
+    return {
+      title: '- Web Development',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            ' Web developmentu sa venujem už dlhšiu dobu (venujem sa hlavne front-endu). Venujem sa hlavne práci v reaktívnom frameworku Vue. Taktiež viem pracovať s jeho hlavnými knižniciami ako VueX, Vue Router, Nuxt a Vuetify. Samozrejmosťou je aj tvorba SPA aplikácií.',
+        },
+      ],
+    }
+  },
   transition(to, from) {
     // Entering
     if (!from) {

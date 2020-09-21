@@ -162,6 +162,11 @@ export default {
 
     return +to.query.page < +from.query.page ? 'slide-right' : 'slide-left'
   },
+  head() {
+    return {
+      title: '- Životopis',
+    }
+  },
 }
 </script>
 

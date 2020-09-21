@@ -115,6 +115,11 @@ export default {
     SwiftUILogo,
     FlyingAstronautAnimation,
   },
+  head() {
+    return {
+      title: '',
+    }
+  },
   transition(to, from) {
     // Entering
     if (!from) {

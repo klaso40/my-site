@@ -62,6 +62,19 @@ export default {
     SwiftUILogo,
     AppDevelopmentImage,
   },
+  head() {
+    return {
+      title: '- App Development',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'App developmentu sa venujem ako svojmu koníčku popri tvorbe webov. Aplikácie tvorím hlavne v technológií Flutter. Vo Flutteri som vytvoril aj aplikáciu WS List, ktorá je dostupná ako pre IOS tak aj pre Android. V budúcnosti sa chcem venovať tvorbe aplikácií vo Swift UI.',
+        },
+      ],
+    }
+  },
   // transition: {
   //   enterActiveClass: 'animate__animated animate__slideInLeft',
   //   leaveActiveClass: 'animate__animated animate__slideInRight',
