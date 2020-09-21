@@ -65,6 +65,12 @@ p {
 }
 .my-list {
   color: white;
+  font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Regular',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #e6e6e6;
+  line-height: 24px;
   ul {
     list-style-type: disc;
 

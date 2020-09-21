@@ -10,6 +10,13 @@ export default {
   head() {
     return {
       titleTemplate: 'Matúš Martin Klasovitý %s',
+      link: [
+        {
+          rel: 'stylesheet',
+          href:
+            'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap',
+        },
+      ],
       metaInfo: {
         meta: [
           { charset: 'utf-8' },
@@ -30,10 +37,10 @@ export default {
 </script>
 >
 <style lang="scss">
-@font-face {
-  font-family: 'Montserrat';
-  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
-}
+// @font-face {
+//   font-family: 'Montserrat';
+//   src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+// }
 $background-color: #0a1b37;
 html {
   font-family: 'Lucida Grande', -apple-system, BlinkMacSystemFont, 'Segoe UI',

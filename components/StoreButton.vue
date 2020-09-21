@@ -61,8 +61,9 @@ a {
       }
       span {
         color: white;
-        font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Regular',
-          'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        // font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Regular',
+        //   'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: 'Montserrat';
         font-size: 14px;
         font-weight: bold;
       }
