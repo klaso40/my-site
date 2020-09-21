@@ -162,40 +162,52 @@
 import gsap from 'gsap'
 export default {
   mounted() {
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: '#appDevelopmentImage',
-        // start: 'top top',
-      },
-    })
-    tl.fromTo(
-      '#mobile',
-      {
-        transform: 'scale(0,0)',
-        transformOrigin: 'center',
-      },
-      {
-        transform: 'scale(1,1)',
-        duration: 1,
-        delay: 0.5,
-        ease: 'ease-in-out',
-      }
-    )
+    const isFirefox = window.navigator.userAgent.includes('Firefox')
+    if (!isFirefox) {
+      this.animation()
+    }
+  },
+  methods: {
+    animation() {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: '#appDevelopmentImage',
+          // start: 'top top',
+        },
+      })
+      tl.fromTo(
+        '#mobile',
+        {
+          transform: 'scale(0,0)',
+          transformOrigin: 'center',
+          rotation: 0,
+        },
+        {
+          transform: 'scale(1,1)',
+          rotation: 0.01,
+          duration: 1,
+          delay: 0.5,
+          ease: 'ease-in-out',
+        }
+      )
 
-    tl.fromTo(
-      '#person',
-      {
-        opacity: 0,
-        transform: 'translateX(50px)',
-      },
-      {
-        opacity: 1,
-        duration: 1,
-        transform: 'translateX(0px)',
-        ease: 'ease-in-out',
-      },
-      '<.5'
-    )
+      tl.fromTo(
+        '#person',
+        {
+          opacity: 0,
+          rotation: 0,
+          transform: 'translateX(50px)',
+        },
+        {
+          opacity: 1,
+          rotation: 0.01,
+          duration: 1,
+          transform: 'translateX(0px)',
+          ease: 'ease-in-out',
+        },
+        '<.5'
+      )
+    },
   },
 }
 </script>

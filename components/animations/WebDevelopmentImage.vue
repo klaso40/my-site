@@ -235,95 +235,103 @@
 import gsap from 'gsap'
 export default {
   mounted() {
-    const tl = gsap.timeline({
-      repeat: -1,
-      yoyo: true,
-      scrollTrigger: {
-        trigger: '#webDev',
-        start: 'bottom bottom',
-      },
-    })
-    tl.fromTo(
-      '.bouncingAnimation',
-      {
-        transform: 'translateY(0)',
-      },
-      {
-        transform: 'translateY(30px)',
-        delay: 0.5,
-        duration: 2,
-        ease: 'easeInOut',
-      }
-    )
-    tl.fromTo(
-      '#grass',
-      {
-        transform: 'rotateZ(0)',
-      },
-      {
-        duration: 2,
-        transform: 'rotateZ(20deg) ',
-      },
-      '<'
-    )
-    const line = gsap.timeline({
-      scrollTrigger: {
-        trigger: '#webDev',
-        start: 'bottom bottom',
-      },
-    })
-    line.fromTo(
-      '#second-line',
-      {
-        opacity: 0,
-        transform: 'translateX(-50px)',
-      },
-      {
-        opacity: 1,
-        transform: 'translateX(0px)',
-        duration: 0.5,
-        ease: 'easeInOut',
-      }
-    )
-    line.fromTo(
-      '#third-line',
-      {
-        opacity: 0,
-        transform: 'translateX(-50px)',
-      },
-      {
-        opacity: 1,
-        transform: 'translateX(0px)',
-        duration: 0.5,
-        ease: 'easeInOut',
-      }
-    )
-    line.fromTo(
-      '#fourth-line',
-      {
-        opacity: 0,
-        transform: 'translateX(-50px)',
-      },
-      {
-        opacity: 1,
-        transform: 'translateX(0px)',
-        duration: 0.5,
-        ease: 'easeInOut',
-      }
-    )
-    line.fromTo(
-      '#fifth-line',
-      {
-        opacity: 0,
-        transform: 'translateX(-50px)',
-      },
-      {
-        opacity: 1,
-        transform: 'translateX(0px)',
-        duration: 0.5,
-        ease: 'easeInOut',
-      }
-    )
+    const isFirefox = window.navigator.userAgent.includes('Firefox')
+    if (!isFirefox) {
+      this.animation()
+    }
+  },
+  methods: {
+    animation() {
+      const tl = gsap.timeline({
+        repeat: -1,
+        yoyo: true,
+        scrollTrigger: {
+          trigger: '#webDev',
+          start: 'bottom bottom',
+        },
+      })
+      tl.fromTo(
+        '.bouncingAnimation',
+        {
+          transform: 'translateY(0)',
+        },
+        {
+          transform: 'translateY(30px)',
+          delay: 0.5,
+          duration: 2,
+          ease: 'easeInOut',
+        }
+      )
+      tl.fromTo(
+        '#grass',
+        {
+          transform: 'rotateZ(0)',
+        },
+        {
+          duration: 2,
+          transform: 'rotateZ(20deg) ',
+        },
+        '<'
+      )
+      const line = gsap.timeline({
+        scrollTrigger: {
+          trigger: '#webDev',
+          start: 'bottom bottom',
+        },
+      })
+      line.fromTo(
+        '#second-line',
+        {
+          opacity: 0,
+          transform: 'translateX(-50px)',
+        },
+        {
+          opacity: 1,
+          transform: 'translateX(0px)',
+          duration: 0.5,
+          ease: 'easeInOut',
+        }
+      )
+      line.fromTo(
+        '#third-line',
+        {
+          opacity: 0,
+          transform: 'translateX(-50px)',
+        },
+        {
+          opacity: 1,
+          transform: 'translateX(0px)',
+          duration: 0.5,
+          ease: 'easeInOut',
+        }
+      )
+      line.fromTo(
+        '#fourth-line',
+        {
+          opacity: 0,
+          transform: 'translateX(-50px)',
+        },
+        {
+          opacity: 1,
+          transform: 'translateX(0px)',
+          duration: 0.5,
+          ease: 'easeInOut',
+        }
+      )
+      line.fromTo(
+        '#fifth-line',
+        {
+          opacity: 0,
+          transform: 'translateX(-50px)',
+        },
+        {
+          opacity: 1,
+          transform: 'translateX(0px)',
+          duration: 0.5,
+          ease: 'easeInOut',
+        }
+      )
+    },
   },
 }
 </script>

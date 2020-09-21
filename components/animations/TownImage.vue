@@ -941,48 +941,56 @@
 import gsap from 'gsap'
 export default {
   mounted() {
-    const tl = gsap.timeline({
-      repeat: -1,
-    })
-    tl.fromTo(
-      '#car-1',
-      {
-        transform: 'translateX(-200px)',
-      },
-      {
-        transform: 'translateX(1000px)',
-        ease: 'linear',
+    const isFirefox = window.navigator.userAgent.includes('Firefox')
+    if (!isFirefox) {
+      this.animation()
+    }
+  },
+  methods: {
+    animation() {
+      const tl = gsap.timeline({
+        repeat: -1,
+      })
+      tl.fromTo(
+        '#car-1',
+        {
+          transform: 'translateX(-200px)',
+        },
+        {
+          transform: 'translateX(1000px)',
+          ease: 'linear',
 
-        duration: 3,
-      }
-    )
-    tl.fromTo(
-      '#car-2',
-      {
-        transform: 'translateX(300px)',
-      },
-      {
-        transform: 'translateX(-1000px)',
-        ease: 'linear',
-        duration: 3,
-      },
-      '<.5'
-    )
-    const clouds = gsap.timeline({
-      repeat: -1,
-    })
-    clouds.fromTo(
-      '#clouds',
+          duration: 3,
+        }
+      )
+      tl.fromTo(
+        '#car-2',
+        {
+          transform: 'translateX(300px)',
+        },
+        {
+          transform: 'translateX(-1000px)',
+          ease: 'linear',
+          duration: 3,
+        },
+        '<.5'
+      )
+      const clouds = gsap.timeline({
+        repeat: -1,
+      })
+      clouds.fromTo(
+        '#clouds',
 
-      {
-        transform: 'translateX(-700px)',
-      },
-      {
-        transform: 'translateX(1000px)',
-        ease: 'linear',
-        duration: 30,
-      }
-    )
+        {
+          transform: 'translateX(-700px)',
+        },
+        {
+          transform: 'translateX(1000px)',
+          ease: 'linear',
+          duration: 30,
+        }
+      )
+    },
   },
 }
 </script>

@@ -515,126 +515,134 @@
 import gsap from 'gsap'
 export default {
   mounted() {
-    const tl = gsap.timeline({
-      repeat: -1,
-      yoyo: true,
-    })
-    tl.fromTo(
-      '#rocket',
-      {
-        transform: 'translateY(-20px)',
-      },
-      {
-        transform: 'translateY(20px)',
-        duration: 2,
-        ease: 'easeInOut',
-      }
-    )
-
-    const asteroidTL = gsap.timeline({
-      repeat: -1,
-    })
-
-    asteroidTL
-      .fromTo(
-        '#asteroid-1',
+    const isFirefox = window.navigator.userAgent.includes('Firefox')
+    if (!isFirefox) {
+      this.animation()
+    }
+  },
+  methods: {
+    animation() {
+      const tl = gsap.timeline({
+        repeat: -1,
+        yoyo: true,
+      })
+      tl.fromTo(
+        '#rocket',
         {
-          opacity: 0,
-          transform: 'translateY(-40px)',
+          transform: 'translateY(-20px)',
         },
         {
-          opacity: 1,
-          duration: 0.8,
-          ease: 'linear',
-          transform: 'translateY(300px)',
+          transform: 'translateY(20px)',
+          duration: 2,
+          ease: 'easeInOut',
         }
       )
-      .to('#asteroid-1', {
-        opacity: 0,
-        duration: 0.3,
-        transform: 'translateY(350px)',
+
+      const asteroidTL = gsap.timeline({
+        repeat: -1,
       })
 
-    asteroidTL
-      .fromTo(
-        '#asteroid-2',
-        {
+      asteroidTL
+        .fromTo(
+          '#asteroid-1',
+          {
+            opacity: 0,
+            transform: 'translateY(-40px)',
+          },
+          {
+            opacity: 1,
+            duration: 0.8,
+            ease: 'linear',
+            transform: 'translateY(300px)',
+          }
+        )
+        .to('#asteroid-1', {
           opacity: 0,
-          transform: 'translateY(-40px)',
-        },
-        {
-          opacity: 1,
-          duration: 0.8,
-          ease: 'linear',
-          transform: 'translateY(300px)',
-        },
-        '<'
-      )
-      .to('#asteroid-2', {
-        opacity: 0,
-        duration: 0.3,
-        transform: 'translateY(350px)',
-      })
-    asteroidTL
-      .fromTo(
-        '#asteroid-3',
-        {
+          duration: 0.3,
+          transform: 'translateY(350px)',
+        })
+
+      asteroidTL
+        .fromTo(
+          '#asteroid-2',
+          {
+            opacity: 0,
+            transform: 'translateY(-40px)',
+          },
+          {
+            opacity: 1,
+            duration: 0.8,
+            ease: 'linear',
+            transform: 'translateY(300px)',
+          },
+          '<'
+        )
+        .to('#asteroid-2', {
           opacity: 0,
-          transform: 'translateY(-40px)',
-        },
-        {
-          opacity: 1,
-          duration: 0.8,
-          ease: 'linear',
-          transform: 'translateY(200px)',
-        },
-        '<'
-      )
-      .to('#asteroid-3', {
-        opacity: 0,
-        duration: 0.3,
-        transform: 'translateY(250px)',
-      })
-    asteroidTL
-      .fromTo(
-        '#asteroid-4',
-        {
+          duration: 0.3,
+          transform: 'translateY(350px)',
+        })
+      asteroidTL
+        .fromTo(
+          '#asteroid-3',
+          {
+            opacity: 0,
+            transform: 'translateY(-40px)',
+          },
+          {
+            opacity: 1,
+            duration: 0.8,
+            ease: 'linear',
+            transform: 'translateY(200px)',
+          },
+          '<'
+        )
+        .to('#asteroid-3', {
           opacity: 0,
-          transform: 'translateY(-40px)',
-        },
-        {
-          opacity: 1,
-          duration: 0.8,
-          ease: 'linear',
-          transform: 'translateY(50px)',
-        },
-        '<'
-      )
-      .to('#asteroid-4', {
-        opacity: 0,
-        duration: 0.3,
-        transform: 'translateY(100px)',
-      })
-    asteroidTL
-      .fromTo(
-        '#asteroid-5',
-        {
+          duration: 0.3,
+          transform: 'translateY(250px)',
+        })
+      asteroidTL
+        .fromTo(
+          '#asteroid-4',
+          {
+            opacity: 0,
+            transform: 'translateY(-40px)',
+          },
+          {
+            opacity: 1,
+            duration: 0.8,
+            ease: 'linear',
+            transform: 'translateY(50px)',
+          },
+          '<'
+        )
+        .to('#asteroid-4', {
           opacity: 0,
-          transform: 'translateY(-40px)',
-        },
-        {
-          opacity: 1,
-          duration: 0.8,
-          ease: 'linear',
-          transform: 'translateY(50px)',
-        },
-        '<'
-      )
-      .to('#asteroid-5', {
-        opacity: 0,
-        duration: 0.3,
-        transform: 'translateY(100px)',
-      })
+          duration: 0.3,
+          transform: 'translateY(100px)',
+        })
+      asteroidTL
+        .fromTo(
+          '#asteroid-5',
+          {
+            opacity: 0,
+            transform: 'translateY(-40px)',
+          },
+          {
+            opacity: 1,
+            duration: 0.8,
+            ease: 'linear',
+            transform: 'translateY(50px)',
+          },
+          '<'
+        )
+        .to('#asteroid-5', {
+          opacity: 0,
+          duration: 0.3,
+          transform: 'translateY(100px)',
+        })
+    },
   },
 }
 </script>
