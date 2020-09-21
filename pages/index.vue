@@ -142,8 +142,8 @@ export default {
   //text-align: center;
 
   .photo {
-    height: 330px;
-    width: 330px;
+    height: 300px;
+    width: 300px;
     border-radius: 50%;
     background: url('~assets/klaso-bez-pozadia.png');
     background-size: 100%;
