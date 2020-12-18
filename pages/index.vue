@@ -25,7 +25,7 @@
             class="button"
             >Zisti viac</a
           >
-          <nuxt-link class="button" to="cv">Zivotopis</nuxt-link>
+          <nuxt-link class="button" to="cv">Životopis</nuxt-link>
         </div>
         <div class="hero"></div>
       </section>
