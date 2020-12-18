@@ -151,6 +151,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+h1 {
+  text-align: center;
+}
 .intro {
   display: flex;
   justify-content: center;

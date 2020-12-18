@@ -59,16 +59,19 @@ h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: white;
-  font-size: 52px;
+  font-size: 40px;
   margin: 30px 0;
-  text-align: center;
+  // text-align: center;
+  @media (max-width: 1024px) {
+    font-size: 35px;
+  }
   @media (max-width: 768px) {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 h2 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
   color: white;
   margin: 0 auto;

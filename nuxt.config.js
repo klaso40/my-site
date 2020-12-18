@@ -36,6 +36,7 @@ export default {
    */
   plugins: [
     '@/plugins/animate.js',
+    '~/plugins/vue-typedjs.js',
     { src: '@/plugins/gsap.js', ssr: false },
     '@/plugins/vue-scrollto.js',
   ],

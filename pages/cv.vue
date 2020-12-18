@@ -171,6 +171,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+h1 {
+  text-align: center;
+}
 .img-container {
   display: flex;
   flex-direction: column;
