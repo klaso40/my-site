@@ -50,6 +50,7 @@ export default {
    */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
+    '@nuxtjs/tailwindcss',
     '@nuxtjs/eslint-module',
   ],
   loading: { color: 'white' },
@@ -60,7 +61,6 @@ export default {
     // Doc: https://github.com/nuxt-community/modules/tree/master/packages/bulma
     '@nuxtjs/style-resources',
     'vue-scrollto/nuxt',
-    '@nuxtjs/bulma',
   ],
   styleResources: {
     scss: ['./assets/sass/*.scss'],

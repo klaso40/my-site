@@ -1,26 +1,24 @@
 <template>
-  <div class="container">
-    <h1>Web development</h1>
-    <div class="columns">
-      <div class="column">
-        <WebDevelopmentImage />
+  <div class="container px-3 sm:px-10 m-auto">
+    <h1 class="heading text-center my-8">Web development</h1>
+    <section class="sm:grid grid-cols-2 gap-10">
+      <div class="hidden sm:flex justify-center">
+        <WebDevelopmentImage class="block" />
       </div>
-      <div class="column intro">
-        <p>
-          Web developmentu sa venujem už dlhšiu dobu (venujem sa hlavne
-          front-endu). Snáď ako každý som začínal s HTML, CSS a Javascriptom.
-          Postupne som prešiel z CSS na SCSS a klasický Javascript som nahradil
-          reaktívnym frameworkom Vue. Vue používam v niektorých prípadoch ako
-          náhradu klasického JavaScriptu na weboch ale taktiež mi nerobí problém
-          aj tvorba SPA (Single Page Applications). Vue mi pomáha pracovať
-          efektívnejšie a vďaka triedeniu kódu do komponetov je môj kód
-          prehľadnejší. Spolu s Vue som sa taktiež naučil pracovať s knižnicami
-          Vue Router, VueX a Vuetify.
-        </p>
-      </div>
-    </div>
-    <div class="columns">
-      <div class="column">
+      <p>
+        Web developmentu sa venujem už dlhšiu dobu (venujem sa hlavne
+        front-endu). Snáď ako každý som začínal s HTML, CSS a Javascriptom.
+        Postupne som prešiel z CSS na SCSS a klasický Javascript som nahradil
+        reaktívnym frameworkom Vue. Vue používam v niektorých prípadoch ako
+        náhradu klasického JavaScriptu na weboch ale taktiež mi nerobí problém
+        aj tvorba SPA (Single Page Applications). Vue mi pomáha pracovať
+        efektívnejšie a vďaka triedeniu kódu do komponetov je môj kód
+        prehľadnejší. Spolu s Vue som sa taktiež naučil pracovať s knižnicami
+        Vue Router, VueX a Vuetify.
+      </p>
+    </section>
+    <section class="lg:grid grid-cols-2 gap-10 mt-16">
+      <div>
         <CardComponent title="Vue.js" :img-path="require('~/assets/vue.svg')">
           <VueLogo slot="image" width="70px" />
           <p slot="text">
@@ -74,19 +72,12 @@
           </p>
         </CardComponent>
       </div>
-      <div class="column img-column">
-        <RocketImage class="rocket" />
-
-        <!-- <img src="~/assets/town.svg" alt="" class="town" /> -->
-        <TownImage class="town" />
-        <LaravelAndVueImage />
-        <!-- <img
-          src="~/assets/laravel_and_vue.svg"
-          alt=""
-          class="laravel-and-vue"
-        /> -->
+      <div class="hidden lg:flex flex-col justify-evenly">
+        <RocketImage class="m-auto block flex-auto" />
+        <TownImage class="mx-auto block flex-auto" />
+        <LaravelAndVueImage class="mx-auto block flex-auto" />
       </div>
-    </div>
+    </section>
     <OtherTechnologies />
   </div>
 </template>
@@ -151,34 +142,35 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-h1 {
-  text-align: center;
-}
-.intro {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
+// h1 {
+//   text-align: center;
+// }
+// .intro {
+//   display: flex;
+//   justify-content: center;
+//   flex-direction: column;
+// }
 
-.img-column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  .rocket {
-    height: 300px;
-  }
+// .img-column {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   .rocket {
+//     height: 300px;
+//   }
 
-  .town {
-    height: fit-content;
-    margin: 80px 0;
-  }
-  .laravel-and-vue {
-    height: 350px;
-  }
-}
-@media (max-width: 768px) {
-  .container {
-    margin: 0 10px;
-  }
-}
+//   .town {
+//     height: fit-content;
+//     margin: 80px 0;
+//   }
+//   .laravel-and-vue {
+//     height: 350px;
+//   }
+// }
+// @media (max-width: 768px) {
+//   .container {
+//     margin: 0 10px;
+//   }
+// }
+//
 </style>

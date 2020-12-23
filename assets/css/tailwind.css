@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+}
+.button {
+  @apply block p-2 w-40 h-10 text-white text-center rounded-sm;
+}
+
+.heading {
+  @apply text-5xl font-Montserrat font-bold text-textColor;
+}
+
+.sub-heading {
+  @apply text-2xl font-Montserrat font-semibold text-textColor;
+}
+
+p {
+  @apply font-Montserrat text-textColor mt-3 mb-3 leading-8;
+}

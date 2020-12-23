@@ -1,17 +1,15 @@
 <template>
-  <div>
-    <h1>Technológie, s ktorými pracujem každý deň</h1>
-    <div class="columns">
-      <div class="column"><img src="~/assets/vue.svg" alt="vue" /></div>
-      <div class="column"><img src="~/assets/nuxt.svg" alt="nuxt" /></div>
-      <div class="column"><img src="~/assets/vuetify.svg" alt="vuetify" /></div>
-      <div class="column"><img src="~/assets/javascript.svg" alt="JS" /></div>
-    </div>
-    <div class="columns">
-      <div class="column"><img src="~/assets/laravel.svg" alt="laravel" /></div>
-      <div class="column"><img src="~/assets/flutter.svg" alt="flutter" /></div>
-      <div class="column"><img src="~/assets/swift.svg" alt="swift" /></div>
-      <div class="column"><img src="~/assets/sass.svg" alt="sass" /></div>
+  <div class="my-20">
+    <h1 class="heading">Technológie, s ktorými pracujem každý deň</h1>
+    <div class="grid mt-16 grid-cols-2 sm:grid-cols-4 gap-4">
+      <img class="m-auto" src="~/assets/vue.svg" alt="vue" />
+      <img class="m-auto" src="~/assets/nuxt.svg" alt="nuxt" />
+      <img class="m-auto" src="~/assets/vuetify.svg" alt="vuetify" />
+      <img class="m-auto" src="~/assets/javascript.svg" alt="JS" />
+      <img class="m-auto" src="~/assets/laravel.svg" alt="laravel" />
+      <img class="m-auto" src="~/assets/flutter.svg" alt="flutter" />
+      <img class="m-auto" src="~/assets/swift.svg" alt="swift" />
+      <img class="m-auto" src="~/assets/sass.svg" alt="sass" />
     </div>
   </div>
 </template>

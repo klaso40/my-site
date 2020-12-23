@@ -2,8 +2,7 @@
   <div class="my-card">
     <div class="my-card-title">
       <div class="image"><slot name="image"> </slot></div>
-
-      <h2>{{ title }}</h2>
+      <h2 class="sub-heading">{{ title }}</h2>
     </div>
     <slot name="text"></slot>
   </div>

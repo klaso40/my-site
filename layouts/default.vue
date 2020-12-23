@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NavBar />
+    <!-- <NavBar /> -->
     <nuxt />
     <MyFooter />
   </div>
@@ -46,92 +46,92 @@ export default {
 // $button-text-color: #e8e8e8;
 // $primary-color: #f05454;
 // $secondary-color: #30475e;
-html {
-  font-family: 'Lucida Grande', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  background: $background-color;
-}
-h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  color: white;
-  font-size: 50px;
-  margin: 30px 0;
-  color: $headline-text-color;
-  // text-align: center;
-  @media (max-width: 1024px) {
-    font-size: 35px;
-  }
-  @media (max-width: 768px) {
-    font-size: 25px;
-  }
-}
-h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 40px;
-  font-weight: 700;
-  color: $headline-text-color;
-  //align-self: center;
-  @media (max-width: 768px) {
-    font-size: 24px;
-  }
-}
-h3 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 22px;
-  font-weight: 700;
-  color: white;
-  // @media (max-width: 768px) {
-  //   font-size: 24px;
-  // }
-}
-h4 {
-  font-family: Montserrat, sans-serif;
-  font-size: 22px;
-  font-weight: bold;
-  color: white;
-}
-p {
-  font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Regular',
-    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 18px;
-  font-weight: normal;
-  color: $text-color;
-  line-height: 40px;
-}
+// html {
+//   font-family: 'Lucida Grande', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+//     Roboto, 'Helvetica Neue', Arial, sans-serif;
+//   font-size: 16px;
+//   word-spacing: 1px;
+//   -ms-text-size-adjust: 100%;
+//   -webkit-text-size-adjust: 100%;
+//   -moz-osx-font-smoothing: grayscale;
+//   -webkit-font-smoothing: antialiased;
+//   box-sizing: border-box;
+//   scroll-behavior: smooth;
+//   background: $background-color;
+// }
+// h1 {
+//   font-family: 'Montserrat', sans-serif;
+//   font-weight: 700;
+//   color: white;
+//   font-size: 50px;
+//   margin: 30px 0;
+//   color: $headline-text-color;
+//   // text-align: center;
+//   @media (max-width: 1024px) {
+//     font-size: 35px;
+//   }
+//   @media (max-width: 768px) {
+//     font-size: 25px;
+//   }
+// }
+// h2 {
+//   font-family: 'Montserrat', sans-serif;
+//   font-size: 40px;
+//   font-weight: 700;
+//   color: $headline-text-color;
+//   //align-self: center;
+//   @media (max-width: 768px) {
+//     font-size: 24px;
+//   }
+// }
+// h3 {
+//   font-family: 'Montserrat', sans-serif;
+//   font-size: 22px;
+//   font-weight: 700;
+//   color: white;
+//   // @media (max-width: 768px) {
+//   //   font-size: 24px;
+//   // }
+// }
+// h4 {
+//   font-family: Montserrat, sans-serif;
+//   font-size: 22px;
+//   font-weight: bold;
+//   color: white;
+// }
+// p {
+//   font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Regular',
+//     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+//   font-size: 18px;
+//   font-weight: normal;
+//   color: $text-color;
+//   line-height: 40px;
+// }
 
-.my-button {
-  width: 212px;
-  height: 53px;
-  line-height: 53px;
-  display: block;
-  border-radius: 10px;
-  text-align: center;
-  border: none;
-  color: $button-text-color;
-  font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Regular',
-    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-weight: bold;
-  font-size: 20px;
-}
-.primary {
-  background: $primary-color;
-}
-.secondary {
-  background: $secondary-color;
-}
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-}
+// .my-button {
+//   width: 212px;
+//   height: 53px;
+//   line-height: 53px;
+//   display: block;
+//   border-radius: 10px;
+//   text-align: center;
+//   border: none;
+//   color: $button-text-color;
+//   font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Regular',
+//     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+//   font-weight: bold;
+//   font-size: 20px;
+// }
+// .primary {
+//   background: $primary-color;
+// }
+// .secondary {
+//   background: $secondary-color;
+// }
+// *,
+// *::before,
+// *::after {
+//   box-sizing: border-box;
+//   margin: 0;
+// }
 </style>
