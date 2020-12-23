@@ -61,7 +61,8 @@ export default {
 
 <style lang="scss" scoped>
 .columns {
-  background: #22324b;
+  background: $background-color;
+  box-shadow: 0 3px 6px rgba($color: #000000, $alpha: 0.16);
   border-radius: 10px;
   padding: 30px 20px;
   .column {

@@ -37,7 +37,7 @@ export default {
 a {
   div {
     margin: 10px 0;
-    background: #0a1b37;
+    background: $secondary-color;
     display: flex;
     flex-direction: row;
     width: fit-content;

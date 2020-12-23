@@ -114,15 +114,15 @@ export default {
 
 <style lang="scss" scoped>
 nav {
-  background: #0a1b37;
+  background: $background-color;
   .logo {
     font-family: 'Montserrat';
     font-size: 40px;
     font-weight: bold;
-    color: white;
+    color: $text-color;
   }
   .navbar-burger {
-    color: white !important;
+    color: $text-color !important;
   }
   .navbar-menu {
     &.is-active {
@@ -136,10 +136,10 @@ nav {
         font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Regular',
           'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-size: 20px;
-        color: white;
+        color: $text-color;
         &:hover {
           transition: 0.3s ease;
-          color: #b3b3b3;
+          color: $headline-text-color;
           background: transparent;
         }
       }
@@ -167,7 +167,7 @@ nav {
 }
 
 .navbar-item.logo.nuxt-link-exact-active {
-  color: white !important;
+  color: $text-color !important;
 }
 .nuxt-link-exact-active {
   color: red !important;

@@ -25,6 +25,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+h2 {
+  text-align: center;
+  width: 100%;
+}
 .my-card-title {
   display: flex;
   flex-direction: row;

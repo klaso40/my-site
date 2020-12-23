@@ -1,27 +1,17 @@
 <template>
   <div>
-    <h1>Ďalšie technológie, s ktorými sa kamarátim</h1>
+    <h1>Technológie, s ktorými pracujem každý deň</h1>
     <div class="columns">
-      <div class="column"><img src="~/assets/html-5.svg" alt="html" /></div>
-      <div class="column"><img src="~/assets/css.svg" alt="css" /></div>
-      <div class="column"><img src="~/assets/sass.svg" alt="sass" /></div>
-      <div class="column">
-        <img src="~/assets/javascript.svg" alt="javascript" />
-      </div>
-      <div class="column">
-        <img class="babel" src="~/assets/babel.svg" alt="babel" />
-      </div>
+      <div class="column"><img src="~/assets/vue.svg" alt="vue" /></div>
+      <div class="column"><img src="~/assets/nuxt.svg" alt="nuxt" /></div>
+      <div class="column"><img src="~/assets/vuetify.svg" alt="vuetify" /></div>
+      <div class="column"><img src="~/assets/javascript.svg" alt="JS" /></div>
     </div>
     <div class="columns">
-      <div class="column">
-        <img src="~/assets/bootstrap.svg" alt="bootstrap" />
-      </div>
-      <div class="column"><img src="~/assets/bulma.svg" alt="bulma" /></div>
-      <div class="column"><img src="~/assets/php.svg" alt="php" /></div>
-      <div class="column">
-        <img class="npm" src="~/assets/npm.svg" alt="npm" />
-      </div>
-      <div class="column"><img src="~/assets/github.svg" alt="github" /></div>
+      <div class="column"><img src="~/assets/laravel.svg" alt="laravel" /></div>
+      <div class="column"><img src="~/assets/flutter.svg" alt="flutter" /></div>
+      <div class="column"><img src="~/assets/swift.svg" alt="swift" /></div>
+      <div class="column"><img src="~/assets/sass.svg" alt="sass" /></div>
     </div>
   </div>
 </template>
@@ -31,14 +21,17 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
-// .img-container {
-//   display: flex;
-//   flex-wrap: wrap;
-// }
+h1 {
+  text-align: center;
+}
 .columns {
   margin-top: 50px;
+  justify-content: space-between;
   .columns:first-child {
     margin-bottom: 30px;
+  }
+  .column {
+    text-align: center;
   }
 }
 img {
