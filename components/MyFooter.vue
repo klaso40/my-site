@@ -1,6 +1,6 @@
 <template>
-  <footer>
-    <div class="container">
+  <footer class="bg-primary">
+    <div class="container text-center text-white p-8">
       <div>© Copyright 2020 | Matúš Martin Klasovitý</div>
       <div>
         Icons made by
@@ -27,20 +27,3 @@
 <script>
 export default {}
 </script>
-
-<style lang="scss" scoped>
-footer {
-  margin-top: 100px;
-  height: fit-content;
-  background: #22324b;
-  text-align: center;
-  color: white;
-}
-
-div {
-  padding: 5px;
-  a:hover {
-    color: grey;
-  }
-}
-</style>

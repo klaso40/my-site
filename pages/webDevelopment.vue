@@ -1,5 +1,5 @@
 <template>
-  <div class="container px-3 sm:px-10 m-auto">
+  <div class="container">
     <h1 class="heading text-center my-8">Web development</h1>
     <section class="sm:grid grid-cols-2 gap-10">
       <div class="hidden sm:flex justify-center">
@@ -140,37 +140,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss" scoped>
-// h1 {
-//   text-align: center;
-// }
-// .intro {
-//   display: flex;
-//   justify-content: center;
-//   flex-direction: column;
-// }
-
-// .img-column {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   .rocket {
-//     height: 300px;
-//   }
-
-//   .town {
-//     height: fit-content;
-//     margin: 80px 0;
-//   }
-//   .laravel-and-vue {
-//     height: 350px;
-//   }
-// }
-// @media (max-width: 768px) {
-//   .container {
-//     margin: 0 10px;
-//   }
-// }
-//
-</style>

@@ -639,20 +639,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss" scoped>
-div {
-  margin: 0 auto;
-}
-svg {
-  height: 300px;
-}
-@media (max-width: 768px) {
-  svg {
-    width: 100%;
-  }
-}
-#rocket-image {
-  overflow: visible;
-}
-</style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="container px-10 m-auto">
+  <div class="container">
     <section class="h-screen flex flex-row items-center">
       <div class="w-1/2">
         <vue-typed-js

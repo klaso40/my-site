@@ -1,5 +1,5 @@
 <template>
-  <svg id="web-dev" viewBox="0 0 1077 756">
+  <svg id="web-dev" class="overflow-visible" viewBox="0 0 1077 756">
     <g id="web-development 1" clip-path="url(#clip0)">
       <g id="grass">
         <path
@@ -328,9 +328,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss" scoped>
-#web-dev {
-  overflow: visible;
-}
-</style>

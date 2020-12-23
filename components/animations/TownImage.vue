@@ -985,18 +985,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss" scoped>
-// div {
-//   //height: 50px !important;
-//   margin: 80px auto !important;
-// }
-// svg {
-//   height: 300px;
-// }
-// @media (max-width: 768px) {
-//   svg {
-//     width: 100%;
-//   }
-// }
-</style>
