@@ -6,12 +6,18 @@
   font-family: 'Montserrat';
   src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 }
+body {
+  @apply bg-bgColor;
+}
 .button {
   @apply block p-2 w-40 h-10 text-white text-center rounded-sm;
 }
+.button:hover {
+  @apply cursor-pointer;
+}
 
 .heading {
-  @apply text-5xl font-Montserrat font-bold text-textColor;
+  @apply text-4xl font-Montserrat font-bold text-textColor;
 }
 
 .sub-heading {

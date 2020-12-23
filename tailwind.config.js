@@ -17,6 +17,7 @@ module.exports = {
         primary: '#f05454',
         secondary: '#30475e',
         textColor: '#433D3C',
+        bgColor: '#E8E8E8',
       },
       fontFamily: {
         Montserrat: 'Montserrat',
