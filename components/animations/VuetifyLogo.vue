@@ -27,17 +27,19 @@ export default {
   //   },
   // },
   mounted() {
-    gsap.fromTo(
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: '#vuetifyLogo',
+        start: 'bottom bottom',
+      },
+    })
+    tl.fromTo(
       '#top-arrow',
       {
         transform: 'translateY(-20px)',
         opacity: 0,
       },
       {
-        scrollTrigger: {
-          trigger: '#vuetifyLogo',
-          start: 'bottom bottom',
-        },
         transform: 'translateY(0)',
         opacity: 1,
         duration: 2,
@@ -45,22 +47,20 @@ export default {
         ease: 'ease',
       }
     )
-    gsap.fromTo(
+    tl.fromTo(
       '#bottom-arrow',
       {
         transform: 'translateY(-60px)',
         opacity: 0,
       },
       {
-        scrollTrigger: {
-          trigger: '#vuetifyLogo',
-        },
         transform: 'translateY(0)',
         opacity: 1,
         duration: 3,
         delay: 0.5,
         ease: 'ease',
-      }
+      },
+      '<'
     )
   },
 }

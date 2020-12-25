@@ -30,11 +30,7 @@
     </section>
     <h1 id="interests" class="heading text-center">Venujem sa</h1>
     <section class="h-max my-8 sm:flex flex-row items-center justify-between">
-      <img
-        class="hidden sm:block w-1/2 mr-8"
-        src="~/assets/web-dev-main.svg"
-        alt=""
-      />
+      <WebDevMainImage class="hidden sm:block w-1/2 mr-8" />
       <div class="sm:w-1/2">
         <h2 class="sub-heading">Web development</h2>
         <p>
@@ -102,6 +98,7 @@ import LaravelLogo from '../components/animations/LaravelLogo.vue'
 import VuetifyLogo from '../components/animations/VuetifyLogo.vue'
 import NuxtLogo from '../components/animations/NuxtLogo.vue'
 import ImageCard from '../components/ImageCard.vue'
+import WebDevMainImage from '../components/animations/WebDevMainImage.vue'
 
 export default {
   components: {
@@ -111,6 +108,7 @@ export default {
     VuetifyLogo,
     NuxtLogo,
     ImageCard,
+    WebDevMainImage,
   },
   head() {
     return {
