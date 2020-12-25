@@ -125,18 +125,33 @@ export default {
       return { enterActiveClass: 'animate__animated animate__fadeIn' }
     }
     if (from.path === '/cv') {
-      return { enterActiveClass: 'animate__animated animate__fadeInLeft' }
+      return { enterActiveClass: 'animate__animated animate__slideInLeft' }
     }
     if (from.path === '/' || from.path === '/appDevelopment') {
-      return { enterActiveClass: 'animate__animated animate__fadeInRight' }
+      return { enterActiveClass: 'animate__animated animate__slideInRight' }
     }
     // Leaving
     if (to.path === '/appDevelopment' || to.path === '/') {
-      return { leaveActiveClass: 'animate__animated animate__fadeOutRight' }
+      return { leaveActiveClass: 'animate__animated animate__slideOutRight' }
     } else if (to.path === '/cv') {
-      return { leaveActiveClass: 'animate__animated animate__fadeOutLeft' }
+      return { leaveActiveClass: 'animate__animated animate__slideOutLeft' }
     }
-    return +to.query.page < +from.query.page ? 'slide-right' : 'slide-left'
   },
 }
 </script>
+
+<style>
+.slide-left-enter-active,
+.slide-left-leave-active {
+  transition: all 0.3s ease;
+}
+.slide-left-enter {
+  transform: translateX(100%);
+}
+.slide-left-enter-to {
+  transform: translateX(0);
+}
+.slide-left-leave-to {
+  transform: translateX(-100%);
+}
+</style>

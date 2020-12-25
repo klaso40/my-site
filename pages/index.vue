@@ -134,8 +134,8 @@ export default {
     }
     if (from) {
       return {
-        enterActiveClass: 'animate__animated animate__fadeInLeft',
-        leaveActiveClass: 'animate__animated animate__fadeOutLeft',
+        enterActiveClass: 'animate__animated animate__slideInLeft',
+        leaveActiveClass: 'animate__animated animate__slideOutLeft',
       }
     }
 

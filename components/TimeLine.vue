@@ -26,8 +26,8 @@ import gsap from 'gsap'
 export default {
   props: {
     year: {
-      type: Number,
-      default: 0,
+      type: String,
+      default: '0',
     },
     school: {
       type: String,
@@ -158,6 +158,7 @@ export default {
 <style lang="scss" scoped>
 #timeLine {
   display: flex;
+  z-index: -1;
   .time-line {
     display: flex;
     flex-direction: column;

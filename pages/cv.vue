@@ -155,12 +155,10 @@ export default {
     }
     if (from) {
       return {
-        enterActiveClass: 'animate__animated animate__fadeInRight',
-        leaveActiveClass: 'animate__animated animate__fadeOutRight',
+        enterActiveClass: 'animate__animated animate__slideInRight',
+        leaveActiveClass: 'animate__animated animate__slideOutRight',
       }
     }
-
-    return +to.query.page < +from.query.page ? 'slide-right' : 'slide-left'
   },
   head() {
     return {

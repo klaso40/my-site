@@ -36,6 +36,7 @@ h2 {
   .image {
     width: 70px;
     position: absolute;
+    z-index: -1;
   }
 }
 // @media (max-width: 768px) {
