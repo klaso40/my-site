@@ -81,11 +81,7 @@
         >
       </div>
 
-      <img
-        class="hidden sm:block w-1/2 ml-8"
-        src="~/assets/ui-main.svg"
-        alt=""
-      />
+      <UIMainImage class="hidden sm:block w-1/2 ml-8" />
     </section>
     <OtherTechnologies />
   </div>
@@ -99,6 +95,7 @@ import VuetifyLogo from '../components/animations/VuetifyLogo.vue'
 import NuxtLogo from '../components/animations/NuxtLogo.vue'
 import ImageCard from '../components/ImageCard.vue'
 import WebDevMainImage from '../components/animations/WebDevMainImage.vue'
+import UIMainImage from '../components/animations/UIMainImage.vue'
 
 export default {
   components: {
@@ -109,6 +106,7 @@ export default {
     NuxtLogo,
     ImageCard,
     WebDevMainImage,
+    UIMainImage,
   },
   head() {
     return {
