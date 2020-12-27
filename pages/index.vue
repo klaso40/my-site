@@ -7,7 +7,7 @@
           :strings="titleTexts"
           :content-type="'html'"
         >
-          <h1 class="typing text-center heading h-32 lg:text-left"></h1>
+          <h1 class="typing text-center heading h-48 w-full lg:text-left"></h1>
         </vue-typed-js>
         <div class="flex justify-evenly lg:justify-start">
           <a
@@ -42,17 +42,17 @@
           neustále menia a preto sa stále rád učím nové veci a mám neustálu
           snahu zdokonaľovať sa.
         </p>
-        <div class="my-8 grid grid-cols-4 gap-10 sm:hidden">
-          <ImageCard class="flex flex-col items-center">
+        <div class="my-8 grid grid-cols-4 gap-4 sm:hidden">
+          <ImageCard class="image-card-style">
             <VueLogo />
           </ImageCard>
-          <ImageCard class="flex flex-col items-center">
+          <ImageCard class="image-card-style">
             <LaravelLogo />
           </ImageCard>
-          <ImageCard class="flex flex-col items-center">
+          <ImageCard class="image-card-style">
             <VuetifyLogo />
           </ImageCard>
-          <ImageCard class="flex flex-col items-center">
+          <ImageCard class="image-card-style">
             <NuxtLogo />
           </ImageCard>
         </div>
@@ -71,11 +71,11 @@
           interaktívny prototyp, ktorý priamo odráža to, ako bude už reálny web
           vyzerať.
         </p>
-        <div class="my-8 grid grid-cols-2 gap-10 w-1/2 sm:hidden">
-          <ImageCard class="flex flex-col items-center">
+        <div class="my-8 grid grid-cols-2 gap-4 w-1/2 sm:hidden">
+          <ImageCard class="image-card-style">
             <img src="~/assets/affinity-design.svg" alt="" />
           </ImageCard>
-          <ImageCard class="flex flex-col items-center">
+          <ImageCard class="image-card-style">
             <img src="~/assets/figma.svg" alt="" />
           </ImageCard>
         </div>

@@ -24,13 +24,15 @@ body {
 }
 
 .heading {
-  @apply text-4xl font-Montserrat font-bold text-textColor;
+  @apply font-Montserrat font-bold text-textColor text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl;
 }
 
 .sub-heading {
-  @apply text-2xl font-Montserrat font-semibold text-textColor;
+  @apply font-Montserrat font-semibold text-textColor text-2xl  2xl:text-4xl;
 }
-
+.image-card-style {
+  @apply flex flex-col items-center justify-center;
+}
 p {
   @apply font-Montserrat text-textColor mt-3 mb-3 leading-8;
 }
