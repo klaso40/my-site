@@ -13,8 +13,8 @@
         >MK</a
       >
       <nuxt-link to="/" class="link">Domov</nuxt-link>
-      <nuxt-link to="webDevelopment" class="link">Web development</nuxt-link>
-      <nuxt-link to="cv" class="link">Životopis</nuxt-link>
+      <nuxt-link to="/web-development" class="link">Web development</nuxt-link>
+      <nuxt-link to="/cv" class="link">Životopis</nuxt-link>
       <span
         id="indicator"
         class="bg-primary hidden h-1 w-16 absolute bottom-1 rounded"

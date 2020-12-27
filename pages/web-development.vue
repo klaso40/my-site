@@ -6,69 +6,51 @@
         <WebDevelopmentImage class="block" />
       </div>
       <p>
-        Web developmentu sa venujem už dlhšiu dobu (venujem sa hlavne
-        front-endu). Snáď ako každý som začínal s HTML, CSS a Javascriptom.
-        Postupne som prešiel z CSS na SCSS a klasický Javascript som nahradil
-        reaktívnym frameworkom Vue. Vue používam v niektorých prípadoch ako
-        náhradu klasického JavaScriptu na weboch ale taktiež mi nerobí problém
-        aj tvorba SPA (Single Page Applications). Vue mi pomáha pracovať
-        efektívnejšie a vďaka triedeniu kódu do komponetov je môj kód
-        prehľadnejší. Spolu s Vue som sa taktiež naučil pracovať s knižnicami
-        Vue Router, VueX a Vuetify.
+        Vývoj frontendu tvorí primárnu časť mojej práce. Hlavne sa venujem
+        vývoju v reaktívnom frameworku Vue. Na štýlovanie používam SASS alebo
+        Tailwind. Tiež práca s animáciami a tvorba mind-blow efektov je u mňa
+        samozrejmosťou. Baví ma robiť perfektný design a prinášať na internet
+        krásu. Rozumiem tomu, že postupy tvorby webov a webových aplikácií sa
+        neustále menia a preto sa stále rád učím nové veci a mám neustálu snahu
+        zdokonaľovať sa.
       </p>
     </section>
     <section class="lg:grid grid-cols-2 gap-10 mt-16">
       <div>
-        <CardComponent title="Vue.js" :img-path="require('~/assets/vue.svg')">
+        <CardComponent title="Vue" :img-path="require('~/assets/vue.svg')">
           <VueLogo slot="image" width="70px" />
           <p slot="text">
-            Vue je takzvaný reaktívny framework. Na weboch nám pomáha s tvorbou
-            UI. Taktiež nám umožňuje tvorbu takzvaných Single Page Applications.
-            S Vue pracujem už dlhšiu dobu a taktiež som sa zoznámil aj s jeho
-            hlavnými knižnicami ako Vue Router a VueX. Vue Router využívame
-            hlavne pri tvorbe SPA. Umožňuje nám konfigurovať cesty k jednotlivým
-            podstránkam. VueX je vlastne globálny úložný priestor pre Vue
-            aplikácie. VueX vieme najviac oceniť keď určité dáta potrebujeme vo
-            viacerých Vue komponentoch.
+            Vue je môj najobľúbenejší JS framework. Poznám a viem pracovať s
+            jeho najznámejšími knižnicami - VueX, Vue Routter. Cez Vue dokážem
+            spraviť webové aplikácie rýchlo a efektívne a vďaka roztriedeniu
+            kódu do komponentov je môj kód vždy čistý a usporiadaný.
           </p>
         </CardComponent>
-        <CardComponent title="Nuxt.js" :img-path="require('~/assets/nuxt.svg')">
+        <CardComponent title="Nuxt" :img-path="require('~/assets/nuxt.svg')">
           <NuxtLogo slot="image" width="70px" />
           <p slot="text">
-            Nuxt je Vue framework, ktorý sa využíva hlavne pri tvorbe hlavne
-            väčších projektov, ale pre prezentáciu som ho použil aj pri tvorbe
-            tejto stránky. Nuxt napríklad rozširuje klasickú priečinkovú
-            štruktúru Vue, ktorá sa skladá len z priečinkov assets a components
-            o priečinky pages, layouts, store, middleware, static a plugin. To
-            umožňuje lepšie rozdelenie kódu a prechod medzi Nuxt aplikáciami je
-            pre developerov jednoduchší. Na základe priečinka pages Nuxt
-            automaticky vygeneruje konfiguráciu Vue Routera. Taktiež zlepšuje
-            SEO Vue aplikácií a vďaka rozdeleniu kódu do viacerých menších
-            súborov a smart-prefetchingu zlepšuje aj rýchlosť načítavania
-            aplikácie.
+            Taktiež som si už vyskúšal tvorbu webových aplikácií cez Nuxt.
+            Poznám všetky jeho najznámejšie ,,fičúry" ako napríklad
+            smart-prefetching, automatická konfigurácia Vue Routtera, či
+            zlepšené SEO oproti klasickým Vue aplikáciam.
           </p>
         </CardComponent>
         <CardComponent title="Vuetify">
           <VuetifyLogo slot="image" width="70px" />
           <p slot="text">
-            Vuetify je intuitívna Vue UI knižnica postavená na material designe.
-            Je pravidelne aktualizovaná, má aktívnu komunitu a funguje vo
-            všetkých webových prehliadačoch. Podobne ako každá Vue aplikácia je
-            rozdelená do jednotlivých komponentov, to umožňuje developerom
-            vytvárať aplikácie s nádherným UI za pomerne krátky čas. Vuetify
-            používam hlavne pri tvorbe aplikácií, ktoré slúžia na správu
-            (napríklad rôzne admin panely alebo užívateľská sekcia na stránke).
+            Viem pracovať aj s najznámejšou UI knižnicou pre Vue - Vuetify.
+            Vuetify som si vyskúšal hlavne pri tvorbe aplikácií, ktoré slúžia na
+            správu (napríklad rôzne admin panely alebo užívateľská sekcia na
+            stránke).
           </p>
         </CardComponent>
         <CardComponent title="Laravel">
           <LaravelLogo slot="image" width="70px" />
           <p slot="text">
-            Laravel ja PHP framework, ktorý sa využíva ako pri tvorbe front-endu
-            tak aj pri tvorbe back-endu. Ja sa venujem hlavne front-end stránke
-            Laravelu. Mám skúsenosti s implementáciou Vue do Laravelu, či už ako
-            samostatných komponentov do Laravel bladov alebo tvorby SPA vo Vue a
-            následným prepojením na Laravel cez RESTful API. Back-end stránke
-            Laravelu sa nevenujem.
+            Laravel poznám len z front-end stránky. Niekoľko krát som v Laravel
+            projektoch tvoril UI cez Laravel blade-y, či vkladal do blade-ov Vue
+            komponenty. Taktiež som robil na SPA Vue aplikáciach, kde ako
+            back-end sa používal práve Laravel.
           </p>
         </CardComponent>
       </div>

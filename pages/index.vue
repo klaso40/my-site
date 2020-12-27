@@ -35,9 +35,12 @@
         <h2 class="sub-heading">Web development</h2>
         <p>
           Vývoj frontendu tvorí primárnu časť mojej práce. Hlavne sa venujem
-          vývoju v reaktívnom frameworku Vue. Na štýlovanie používam SASS. Tiež
-          práca s animáciami a tvorba mind-blow efektov je u mňa samozrejmosťou.
-          Baví ma robiť perfektný design a prinášať na internet krásu.
+          vývoju v reaktívnom frameworku Vue. Na štýlovanie používam SASS alebo
+          Tailwind. Tiež práca s animáciami a tvorba mind-blow efektov je u mňa
+          samozrejmosťou. Baví ma robiť perfektný design a prinášať na internet
+          krásu. Rozumiem tomu, že postupy tvorby webov a webových aplikácií sa
+          neustále menia a preto sa stále rád učím nové veci a mám neustálu
+          snahu zdokonaľovať sa.
         </p>
         <div class="my-8 flex gap-10 sm:hidden">
           <ImageCard class="flex-1">
@@ -62,10 +65,11 @@
       <div class="sm:w-1/2">
         <h2 class="sub-heading">UI/UX</h2>
         <p>
-          Vývoj frontendu tvorí primárnu časť mojej práce. Hlavne sa venujem
-          vývoju v reaktívnom frameworku Vue. Na štýlovanie používam SASS. Tiež
-          práca s animáciami a tvorba mind-blow efektov je u mňa samozrejmosťou.
-          Baví ma robiť perfektný design a prinášať na internet krásu.
+          Popri programovaní sa tiež venujem aj dizajnu. Dokážem nadizajnovať
+          modernú web stránku, ktorá nielen dobre vyzerá, ale aj sa dobre
+          používa. Dizajnujem pomocou moderných softvérov a výsledkom býva
+          interaktívny prototyp, ktorý priamo odráža to, ako bude už reálny web
+          vyzerať.
         </p>
         <div class="my-8 flex gap-10 w-1/2 sm:hidden">
           <ImageCard class="flex-1">
@@ -107,10 +111,8 @@ export default {
   data() {
     return {
       titleTexts: [
-        'Volám sa Matúš a som programátor 💻',
         'Volám sa Matúš a som front-end developer ☕️',
-        'Volám sa Matúš a som web developer? 😂',
-        'Volám sa Matúš a som formulový nadšenec 🏎!',
+        'Volám sa Matúš a som Vue developer 💚',
       ],
     }
   },
