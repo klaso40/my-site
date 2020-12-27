@@ -1,8 +1,10 @@
 <template>
   <div class="my-card">
-    <div class="my-card-title">
-      <div class="image"><slot name="image"> </slot></div>
-      <h2 class="sub-heading">{{ title }}</h2>
+    <div class="flex flex-row items-center my-8">
+      <div class="absolute">
+        <slot name="image"> </slot>
+      </div>
+      <h2 class="sub-heading mx-auto">{{ title }}</h2>
     </div>
     <slot name="text"></slot>
   </div>
@@ -22,29 +24,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss" scoped>
-h2 {
-  text-align: center;
-  width: 100%;
-}
-.my-card-title {
-  display: flex;
-  flex-direction: row;
-  margin: 30px 0;
-  align-items: center;
-  .image {
-    width: 70px;
-    position: absolute;
-    z-index: -1;
-  }
-}
-// @media (max-width: 768px) {
-//   .my-card {
-//     margin: 0 10px;
-//     img {
-//       width: 50px;
-//     }
-//   }
-// }
-</style>
