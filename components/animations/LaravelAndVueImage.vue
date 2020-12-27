@@ -1,5 +1,5 @@
 <template>
-  <svg class="w-max" viewBox="0 0 863 827" id="laravelAndVueImage">
+  <svg id="laravelAndVueImage" class="w-max" viewBox="0 0 863 827">
     <g id="laravel_and_vue 1" clip-path="url(#clip0)">
       <path
         id="Vector"

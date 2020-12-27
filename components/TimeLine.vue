@@ -38,7 +38,7 @@ export default {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: '#timeLine',
-        start: 'bottom bottom',
+        //  start: 'top top',
       },
     })
     tl.fromTo(
@@ -158,7 +158,7 @@ export default {
 <style lang="scss" scoped>
 #timeLine {
   display: flex;
-  z-index: -1;
+  z-index: -20;
   .time-line {
     display: flex;
     flex-direction: column;

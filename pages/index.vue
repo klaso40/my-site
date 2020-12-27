@@ -1,11 +1,11 @@
 <template>
   <div class="container">
     <section class="h-screen flex flex-row items-center">
-      <div class="lg:w-1/2">
+      <div class="w-full lg:w-1/2">
         <vue-typed-js
-          :showCursor="false"
+          :show-cursor="false"
           :strings="titleTexts"
-          :contentType="'html'"
+          :content-type="'html'"
         >
           <h1 class="typing text-center heading h-32 lg:text-left"></h1>
         </vue-typed-js>
@@ -75,10 +75,6 @@
             <img src="~/assets/figma.svg" alt="" />
           </ImageCard>
         </div>
-
-        <nuxt-link class="button bg-primary" to="webDevelopment"
-          >ZISTI VIAC</nuxt-link
-        >
       </div>
 
       <UIMainImage class="hidden sm:block w-1/2 ml-8" />
@@ -108,11 +104,6 @@ export default {
     WebDevMainImage,
     UIMainImage,
   },
-  head() {
-    return {
-      title: '',
-    }
-  },
   data() {
     return {
       titleTexts: [
@@ -121,6 +112,11 @@ export default {
         'Volám sa Matúš a som web developer? 😂',
         'Volám sa Matúš a som formulový nadšenec 🏎!',
       ],
+    }
+  },
+  head() {
+    return {
+      title: '',
     }
   },
   transition(to, from) {

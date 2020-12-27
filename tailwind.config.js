@@ -22,6 +22,9 @@ module.exports = {
       fontFamily: {
         Montserrat: 'Montserrat',
       },
+      zIndex: {
+        '-10': '-10',
+      },
     },
   },
   variants: {

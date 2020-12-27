@@ -2,7 +2,7 @@
   <nav class="z-50 md:hidden">
     <div
       id="tab-bar"
-      class="fixed bottom-10 right-5 m-auto w-14 h-14 flex flex-row items-center justify-evenly bg-bgColor rounded-full shadow-md"
+      class="fixed bottom-10 right-5 m-auto w-14 h-14 flex flex-row items-center justify-evenly bg-bgColor rounded-full shadow-md z-20"
     >
       <span
         v-show="expanded"

@@ -1,7 +1,7 @@
 <template>
   <div class="my-card">
     <div class="flex flex-row items-center my-8">
-      <div class="absolute">
+      <div class="absolute -z-10">
         <slot name="image"> </slot>
       </div>
       <h2 class="sub-heading mx-auto">{{ title }}</h2>
