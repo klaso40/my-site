@@ -10,8 +10,8 @@
       </div>
     </div>
     <div class="time-line-content">
-      <h3 id="year">{{ year }}</h3>
-      <h4 id="school">{{ school }}</h4>
+      <h3 id="year" class="sub-heading">{{ year }}</h3>
+      <h4 id="school" class="sub-heading">{{ school }}</h4>
       <div id="text">
         <slot name="first"></slot>
         <br />
