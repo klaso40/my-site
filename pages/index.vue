@@ -56,7 +56,7 @@
             <NuxtLogo />
           </ImageCard>
         </div>
-        <nuxt-link class="button bg-primary" to="webDevelopment"
+        <nuxt-link class="button bg-primary" to="/web-development"
           >ZISTI VIAC</nuxt-link
         >
       </div>
