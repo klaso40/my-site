@@ -42,17 +42,17 @@
           neustále menia a preto sa stále rád učím nové veci a mám neustálu
           snahu zdokonaľovať sa.
         </p>
-        <div class="my-8 flex gap-10 sm:hidden">
-          <ImageCard class="flex-1">
+        <div class="my-8 grid grid-cols-4 gap-10 sm:hidden">
+          <ImageCard class="flex flex-col items-center">
             <VueLogo />
           </ImageCard>
-          <ImageCard class="flex-1">
-            <LaravelLogo class="flex-1" />
+          <ImageCard class="flex flex-col items-center">
+            <LaravelLogo />
           </ImageCard>
-          <ImageCard class="flex-1">
+          <ImageCard class="flex flex-col items-center">
             <VuetifyLogo />
           </ImageCard>
-          <ImageCard class="flex-1">
+          <ImageCard class="flex flex-col items-center">
             <NuxtLogo />
           </ImageCard>
         </div>
@@ -71,11 +71,11 @@
           interaktívny prototyp, ktorý priamo odráža to, ako bude už reálny web
           vyzerať.
         </p>
-        <div class="my-8 flex gap-10 w-1/2 sm:hidden">
-          <ImageCard class="flex-1">
+        <div class="my-8 grid grid-cols-2 gap-10 w-1/2 sm:hidden">
+          <ImageCard class="flex flex-col items-center">
             <img src="~/assets/affinity-design.svg" alt="" />
           </ImageCard>
-          <ImageCard class="flex-1">
+          <ImageCard class="flex flex-col items-center">
             <img src="~/assets/figma.svg" alt="" />
           </ImageCard>
         </div>
@@ -111,8 +111,8 @@ export default {
   data() {
     return {
       titleTexts: [
-        'Volám sa Matúš a som front-end developer ☕️',
-        'Volám sa Matúš a som Vue developer 💚',
+        'Volám sa Matúš a som front-end developer☕️',
+        'Volám sa Matúš a som Vue developer💚',
       ],
     }
   },
