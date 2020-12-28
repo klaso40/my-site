@@ -45,7 +45,7 @@
               </svg>
             </a>
             <a
-              href="https://www.linkedin.com/in/mat%FA/?-martin-klasovit%FD-28b2b51a9"
+              href="https://www.linkedin.com/in/mat%C3%BA%C5%A1-martin-klasovit%C3%BD-28b2b51a9/"
               class="ml-4 text-textColor hover:text-primary"
             >
               <svg
