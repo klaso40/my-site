@@ -16,7 +16,10 @@
           >Freepik,</a
         >
         <a href="https://www.flaticon.com/authors/icongeek26" title="Icongeek26"
-          >Icongeek26</a
+          >Icongeek26,</a
+        >
+        <a href="https://www.flaticon.com/authors/xnimrodx" title="xnimrodx"
+          >xnimrodx</a
         >
         from
         <a href="https://www.flaticon.com/" title="Flaticon"
