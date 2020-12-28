@@ -13,8 +13,8 @@ export default {
       default: '70px',
     },
     delay: {
-      type: Number,
-      default: 0.5,
+      type: String,
+      default: '0.5',
     },
   },
   mounted() {

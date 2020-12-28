@@ -14,6 +14,7 @@
       >
       <nuxt-link to="/" class="link">Domov</nuxt-link>
       <nuxt-link to="/web-development" class="link">Web development</nuxt-link>
+      <nuxt-link to="/app-development" class="link">App development</nuxt-link>
       <nuxt-link to="/cv" class="link">Životopis</nuxt-link>
       <span
         id="indicator"
